@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import { connect } from "redux-thunk";
+import { connect } from "react-redux";
 import "./Teams.scss";
 
 class Teams extends Component {
