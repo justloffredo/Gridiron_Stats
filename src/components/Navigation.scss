@@ -6,6 +6,9 @@
 	margin-bottom: 20px;
 	background: rgb(232,239,213);
 	border-bottom: 1px solid #000;
+	z-index: 4;
+	position: absolute;
+	width: 100%;
 
 	&-link {
 		padding: 0 4px;

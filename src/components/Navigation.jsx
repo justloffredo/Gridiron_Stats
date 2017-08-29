@@ -9,7 +9,6 @@ import { Menu } from "semantic-ui-react";
 
 class Navigation extends Component {
 	render() {
-
 		const links = [{
 			to: "/",
 			text: "GRIDIRON STATS",
@@ -22,7 +21,7 @@ class Navigation extends Component {
 		}];
 
 		return (
-			< Menu >
+			< Menu className="Nav">
 				< Menu.Menu>
 					<Menu.Item position="left">
 						<Link to="/" className="Nav-Link-Home">
@@ -38,14 +37,15 @@ class Navigation extends Component {
 									key= {link.to}
 									to= {link.to}
 									className= "Nav-link"
-									activeClassName= "is-active">
+									activeClassName= "is-active"
+								>
 									{link.text}
 								</NavLink>
 							</Menu.Item>
 						);
 					})}
-					</Menu.Menu>
-				</Menu>
+				</Menu.Menu>
+			</Menu>
 		);
 	}
 }
