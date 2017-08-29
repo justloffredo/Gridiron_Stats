@@ -1,10 +1,14 @@
 import TEAMS from "json/nfl.json";
 
 
-export function retrieveTeam(name) {
+export function retrieveTeam(teaminfo) {
 	return (dispatch) => {
-		const team = TEAMS.find((team) => team.name === name);
-		dispatch({ type: "TEAM_LOAD_START" });
+		const teams = TEAMS;
+		const team = teams.find((team) => team.name === teaminfo.name);
+		dispatch({
+			type: "TEAM_LOAD_START",
+		});
+		console.log("retrieveTeam(teaminfo) action/function", team);
 		if (team) {
 			return dispatch({
 				type: "TEAM_LOAD_SUCCESS",

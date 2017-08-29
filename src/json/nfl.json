@@ -1,6 +1,6 @@
 [
   {
-  "Name": "Chicago Bears",
+  "name": "Chicago Bears",
   "Crime": [
       {
         "Category": "DUI",
@@ -64,7 +64,7 @@
 
 
   {
-    "Name": "Dallas Cowboys",
+    "name": "Dallas Cowboys",
     "Crime": [
     {
       "Category": "DUI",
@@ -131,7 +131,7 @@
 
 
   {
-    "Name": "Miami Dolphins",
+    "name": "Miami Dolphins",
 
     "Crime":[
       {
@@ -191,7 +191,7 @@
 
   {
 
-    "Name": "Seattle Seahawks",
+    "name": "Seattle Seahawks",
     "Crime": [
       {
       "Category": "DUI",
@@ -234,7 +234,7 @@
 
   {
 
-    "Name": "Philadelphia Eagles",
+    "name": "Philadelphia Eagles",
     "Crime": [
       {
       "Category": "Animal abuse",
@@ -273,6 +273,5 @@
       "arrest_count": "1"
       }
     ]
-  },
-  ]
-}
+  }
+]

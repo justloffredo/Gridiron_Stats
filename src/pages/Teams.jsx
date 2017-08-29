@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import retrieveTeam from "actions/teams";
+import { retrieveTeam } from "actions/teams.js";
 import nflTeamsList from "json/dropdown.json";
 import "./Teams.scss";
 
@@ -9,15 +9,16 @@ class Teams extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			team1: "",
-			team2: "",
+			name: "",
+
 		};
 	}
 
 	_handleChange = (event) => {
 		this.setState({
-			[event.target.name]: [event.target.value],
+			[event.target.name]: [event.target.value].toString(),
 		});
+		console.log(this.state);
 	}
 
 	_handleSubmit = (event) => {
@@ -26,21 +27,23 @@ class Teams extends Component {
 	}
 
 	render() {
+		const { name } = this.state;
 		return (
-
-
 			<div className= "team-one-submit">
+				<form>
 				<label name="team1"> Team 1 </label>
-				<select onChange= {this.handleChange} name = "team1" >
+				<select name = "name" placeholder=" Select Your Team" >
 					{nflTeamsList.map((teams) => {
 						return (
-							<option value= { teams.abr }>{ teams.name }</option>
+							<option onChange= {this._handleChange} value= { teams.name }>{ teams.name }</option>
+
 						);
 					})}
 				</select>
-				<div className="button-field-submit hidden">
+				<div className="button-field">
 					<button type="submit" onSubmit={this._handleSubmit}>Submit</button>
 				</div>
+			</form>
 			</div>
 		);
 	}
@@ -55,4 +58,4 @@ function mapStateToProps(state, props) {
 	};
 }
 
-export default connect (mapStateToProps, { retrieveTeam })  (Teams);
+export default connect (mapStateToProps, { retrieveTeam })(Teams);
