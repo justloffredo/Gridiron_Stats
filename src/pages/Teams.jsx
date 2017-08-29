@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
+import retrieveTeam from "actions/teams";
 import nflTeamsList from "json/dropdown.json";
 import "./Teams.scss";
 
@@ -20,7 +22,7 @@ class Teams extends Component {
 
 	_handleSubmit = (event) => {
 		event.preventDefault();
-		this.props.submit(this.state);
+		this.props.retrieveTeam(this.state);
 	}
 
 	render() {
@@ -43,6 +45,14 @@ class Teams extends Component {
 		);
 	}
 }
+function mapStateToProps(state, props) {
+	return {
+		activeTeam: state.teams.activeTeam,
+		isLOADING: state.teams.isLOADING,
+		submitTeamSuccess: state.teams.submitTeamSuccess,
+		submitTeamFailure: state.teams.submitTeamFailure,
+		error: state.teams.error,
+	};
+}
 
-
-export default Teams;
+export default connect (mapStateToProps, { retrieveTeam })  (Teams);
