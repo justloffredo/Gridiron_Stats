@@ -1,30 +1,37 @@
 import React, { Component } from "react";
 // import { connect } from "redux-thunk";
 import "./Home.scss";
+import { Parallax } from "react-parallax";
 
 class Home extends Component {
 	render() {
 		return (
 
-			<div className="container">
-				<section className="background">
-					<div className="content-wrapper">
-						<p className="content-title">gridiron stats</p>
-						<p className="content-subtitle">See where your team ranks!</p>
-					</div>
-				</section>
-				<section className="background">
-					<div className="content-wrapper">
-						<p className="content-title">do a comparison</p>
-						<p className="content-subtitle">Check where your team ranks against the competition</p>
-					</div>
-				</section>
-				<section className="background">
-					<div className="content-wrapper">
-						<p className="content-title">donate</p>
-						<p className="content-subtitle">support charities affected by injustice worldwide</p>
-					</div>
-				</section>
+			<div className="App">
+				<header> NEED TO CHANGE </header>
+
+				<Parallax
+					strength={300}
+					bgImage="http://i.imgur.com/avGzEKP.jpg"
+					bgWidth="100%"
+				>
+					<h2>Gridiron Stats</h2>
+
+				</Parallax>
+				<Parallax
+					strength={300}
+					bgImage="http://i.imgur.com/wUPkxQI.jpg"
+					bgWidth="100%"
+				>
+					<h2>Compare the Teams</h2>
+				</Parallax>
+				<Parallax
+					strength={300}
+					bgImage="http://i.imgur.com/z0ZJhbN.jpg"
+					bgWidth="100%"
+				>
+					<h2>Donate</h2>
+				</Parallax>
 			</div>
 
 
