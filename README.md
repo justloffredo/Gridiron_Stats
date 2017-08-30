@@ -1,4 +1,4 @@
-<img src="/assets/images/football.jpg" align="right" />
+<img src="src/assets/images/football.jpg" align="right" />
 
 # Gridiron Stats --- NFL Crimes Application <br> [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/samirdhebar/Gridiron_Stats/master/LICENSE.md)
 An application created by [Samir Dhebar](https://github.com/samirdhebar) and [Justin Loffredo](https://github.com/justloffredo). A front-end application that illustrates crime information between teams in the National Football League.
