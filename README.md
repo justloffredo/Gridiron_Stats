@@ -1,4 +1,4 @@
-<img src="/assets/images/football.jpg" align="right" />
+<img src="src/assets/images/football.jpg" align="right" />
 
 # Gridiron Stats --- NFL Crimes Application <br> [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/samirdhebar/Gridiron_Stats/master/LICENSE.md)
 An application created by [Samir Dhebar](https://github.com/samirdhebar) and [Justin Loffredo](https://github.com/justloffredo). A front-end application that illustrates crime information between teams in the National Football League.
@@ -48,8 +48,16 @@ equipped with Webpack for builds. It provides the following features:
 
 ## Technology Used
 <img src="src/assets/images/node.png" align= "center" /> <br><br>  
-* Node is a multi-platform, open-source Javascript run-time environment that executes code on the server-side.
+* [Node](https://nodejs.org/en/) is a multi-platform, open-source JavaScript run-time environment that executes code on the server-side.
 <br><br>
+
+<img src="src/assets/images/react.png" align= "center" /> <br><br>  
+* [React](https://facebook.github.io/react/) is a declarative, component based Javascript library built for creating user interfaces.
+
+* [Semantic](http://www.semantic-ui.com) is a UI component framework based around useful principles from natural language.
+<br><br>
+
+
 
 
 ## Contribute
