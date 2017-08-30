@@ -10,47 +10,53 @@ class Teams extends Component {
 		super(props);
 		this.state = {
 			name: "",
-
 		};
 	}
 
-	_handleChange = (event) => {
-		this.setState({
-			[event.target.name]: [event.target.value].toString(),
-		});
-		console.log(this.state);
+	_handleChange = (ev) => {
+		console.log(ev.target.value);
+		this.setState({ name: ev.target.value });
 	}
 
-	_handleSubmit = (event) => {
-		event.preventDefault();
-		this.props.retrieveTeam(this.state);
+	_handleSubmit = (ev) => {
+		ev.preventDefault();
+		console.log(this.state);
+		this.props.retrieveTeam(this.state.name);
 	}
 
 	render() {
-		const { name } = this.state;
+		const { team1 } = this.state;
 		return (
 			<div className= "team-one-submit">
-				<form>
-				<label name="team1"> Team 1 </label>
-				<select name = "name" placeholder=" Select Your Team" >
-					{nflTeamsList.map((teams) => {
-						return (
-							<option onChange= {this._handleChange} value= { teams.name }>{ teams.name }</option>
+				<form onSubmit={this._handleSubmit}>
+					<label name="team1"> Team 1 </label>
+					<select onChange={this._handleChange} name="name" placeholder=" Select Your Team" >
+						{nflTeamsList.map((teams) => {
+							return (
+								<option  value= { teams.name }>{ teams.name }</option>
+
+							);
+						})}
+					</select>
+					{/* <select name = "team2" placeholder=" Select Your Team" >
+						{nflTeamsList.map((teams) => {
+							return (
+								<option onChange= {this._handleChange} value= { teams.name }>{ teams.name }</option>
 
 						);
 					})}
-				</select>
-				<div className="button-field">
-					<button type="submit" onSubmit={this._handleSubmit}>Submit</button>
-				</div>
-			</form>
+				</select> */}
+					<div className="submit-button">
+						<button type="submit">Submit</button>
+					</div>
+				</form>
 			</div>
 		);
 	}
 }
 function mapStateToProps(state, props) {
 	return {
-		activeTeam: state.teams.activeTeam,
+		currentTeam: state.teams.team,
 		isLOADING: state.teams.isLOADING,
 		submitTeamSuccess: state.teams.submitTeamSuccess,
 		submitTeamFailure: state.teams.submitTeamFailure,

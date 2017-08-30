@@ -12,9 +12,6 @@ import reducers from "reducers";
 const store = createStore(reducers, applyMiddleware(reduxThunk));
 
 class App extends React.Component {
-	state = {
-
-	};
 	render() {
 		return (
 			<Provider store={store}>

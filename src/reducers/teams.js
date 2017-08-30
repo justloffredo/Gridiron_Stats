@@ -1,6 +1,5 @@
 const INITIAL_STATE = {
-	activeTeam: null,
-	team: null,
+	team1: null,
 	submitTeamSuccess: false,
 	submitTeamFailure: false,
 	isLOADING: false,
@@ -8,13 +7,12 @@ const INITIAL_STATE = {
 };
 
 function teamsReduced(state = INITIAL_STATE, action) {
-
 	switch (action.type) {
 	case "TEAM_LOAD_START":
 		return {
 			...state,
 			isLOADING: true,
-			activeTeam: null,
+			team1: null,
 			submitTeamSuccess: false,
 			submitTeamFailure: false,
 			error: null,
@@ -24,7 +22,7 @@ function teamsReduced(state = INITIAL_STATE, action) {
 		return {
 			...state,
 			isLOADING: false,
-			activeTeam: action.team,
+			team1: action.team,
 			submitTeamSuccess: true,
 			submitTeamFailure: false,
 			error: null,
