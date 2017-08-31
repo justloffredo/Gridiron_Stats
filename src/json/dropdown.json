@@ -1,225 +1,225 @@
 [
     {
         "city": "Arizona",
-        "name": "Arizona Cardinals",
-        "abr": "ARI",
+        "text": "Arizona Cardinals",
+        "value": "ARI",
         "conf": "NFC",
         "div": "West"
     },
     {
         "city": "Atlanta",
-        "name": "Atlanta Falcons",
-        "abr": "ATL",
+        "text": "Atlanta Falcons",
+        "value": "ATL",
         "conf": "NFC",
         "div": "South"
     },
     {
         "city": "Baltimore",
-        "name": "Baltimore Ravens",
-        "abr": "BAL",
+        "text": "Baltimore Ravens",
+        "value": "BAL",
         "conf": "AFC",
         "div": "North"
     },
     {
         "city": "Buffalo",
-        "name": "Buffalo Bills",
-        "abr": "BUF",
+        "text": "Buffalo Bills",
+        "value": "BUF",
         "conf": "AFC",
         "div": "EAST"
     },
     {
         "city": "Carolina",
-        "name": "Carolina Panthers",
-        "abr": "CAR",
+        "text": "Carolina Panthers",
+        "value": "CAR",
         "conf": "NFC",
         "div": "South"
     },
     {
         "city": "Cincinnati",
-        "name": "Cincinnati Bengals",
-        "abr": "CIN",
+        "text": "Cincinnati Bengals",
+        "value": "CIN",
         "conf": "AFC",
         "div": "North"
     },
     {
         "city": "Chicago",
-        "name": "Chicago Bears",
-        "abr": "CHI",
+        "text": "Chicago Bears",
+        "value": "CHI",
         "conf": "NFC",
         "div": "North"
     },
     {
         "city": "Cleveland",
-        "name": "Cleveland Browns",
-        "abr": "CLE",
+        "text": "Cleveland Browns",
+        "value": "CLE",
         "conf": "AFC",
         "div": "North"
     },
     {
         "city": "Dallas",
-        "name": "Dallas Cowboys",
-        "abr": "DAL",
+        "text": "Dallas Cowboys",
+        "value": "DAL",
         "conf": "NFC",
         "div": "East"
     },
     {
         "city": "Denver",
-        "name": "Denver Broncos",
-        "abr": "DEN",
+        "text": "Denver Broncos",
+        "value": "DEN",
         "conf": "AFC",
         "div": "West"
     },
     {
         "city": "Detroit",
-        "name": "Detroit Lions",
-        "abr": "DET",
+        "text": "Detroit Lions",
+        "value": "DET",
         "conf": "NFC",
         "div": "North"
     },
     {
         "city": "Green Bay",
-        "name": "Green Bay Packers",
-        "abr": "GB",
+        "text": "Green Bay Packers",
+        "value": "GB",
         "conf": "NFC",
         "div": "North"
     },
     {
         "city": "Houston",
-        "name": "Houstan Texans",
-        "abr": "HOU",
+        "text": "Houstan Texans",
+        "value": "HOU",
         "conf": "AFC",
         "div": "South"
     },
     {
         "city": "Indianapolis",
-        "name": "Indianapolis Colts",
-        "abr": "IND",
+        "text": "Indianapolis Colts",
+        "value": "IND",
         "conf": "AFC",
         "div": "South"
     },
     {
         "city": "Jacksonville",
-        "name": "Jacksonville Jaquars",
-        "abr": "JAX",
+        "text": "Jacksonville Jaquars",
+        "value": "JAX",
         "conf": "AFC",
         "div": "South"
     },
     {
         "city": "Kansas City",
-        "name": "Kansas City Chiefs",
-        "abr": "KC",
+        "text": "Kansas City Chiefs",
+        "value": "KC",
         "conf": "AFC",
         "div": "West"
     },
     {
         "city": "Miami",
-        "name": "Miami Dolphins",
-        "abr": "MIA",
+        "text": "Miami Dolphins",
+        "value": "MIA",
         "conf": "AFC",
         "div": "East"
     },
     {
         "city": "Minnesota",
-        "name": "Minnesota Vikings",
-        "abr": "MIN",
+        "text": "Minnesota Vikings",
+        "value": "MIN",
         "conf": "AFC",
         "div": "North"
     },
     {
         "city": "New England",
-        "name": "New England Patriots",
-        "abr": "NE",
+        "text": "New England Patriots",
+        "value": "NE",
         "conf": "AFC",
         "div": "East"
     },
     {
         "city": "New Orleans",
-        "name": "New Orleans Saints",
-        "abr": "NO",
+        "text": "New Orleans Saints",
+        "value": "NO",
         "conf": "NFC",
         "div": "South"
     },
     {
         "city": "New York",
-        "name": "New York Giants",
-        "abr": "NYG",
+        "text": "New York Giants",
+        "value": "NYG",
         "conf": "NFC",
         "div": "East"
     },
     {
         "city": "New York",
-        "name": "New York Jets",
-        "abr": "NYJ",
+        "text": "New York Jets",
+        "value": "NYJ",
         "conf": "AFC",
         "div": "East"
     },
     {
         "city": "Oakland",
-        "name": "Oakland Raiders",
-        "abr": "OAK",
+        "text": "Oakland Raiders",
+        "value": "OAK",
         "conf": "AFC",
         "div": "West"
     },
     {
         "city": "Philidelphia",
-        "name": "Philadelphia Eagles",
-        "abr": "PHI",
+        "text": "Philadelphia Eagles",
+        "value": "PHI",
         "conf": "NFC",
         "div": "East"
     },
     {
         "city": "Pittsburgh",
-        "name": "Pittsburgh Steelers",
-        "abr": "PIT",
+        "text": "Pittsburgh Steelers",
+        "value": "PIT",
         "conf": "AFC",
         "div": "North"
     },
     {
         "city": "San Diego",
-        "name": "San Diego Chargers",
-        "abr": "SD",
+        "text": "San Diego Chargers",
+        "value": "SD",
         "conf": "AFC",
         "div": "West"
     },
 		{
         "city": "San Francisco",
-        "name": "San Francisco 49ers",
-        "abr": "SF",
+        "text": "San Francisco 49ers",
+        "value": "SF",
         "conf": "NFC",
         "div": "West"
     },
 		{
 				"city": "Seattle",
-				"name": "Seattle Seahawks",
-				"abr": "SEA",
+				"text": "Seattle Seahawks",
+				"value": "SEA",
 				"conf": "NFC",
 				"div": "West"
 		},
     {
         "city": "Los Angeles",
-        "name": "Los Angeles Rams",
-        "abr": "LA",
+        "text": "Los Angeles Rams",
+        "value": "LA",
         "conf": "NFC",
         "div": "West"
     },
     {
         "city": "Tampa Bay",
-        "name": "Tampa Bay Buccaneers",
-        "abr": "TB",
+        "text": "Tampa Bay Buccaneers",
+        "value": "TB",
         "conf": "NFC",
         "div": "South"
     },
     {
         "city": "Tennessee",
-        "name": "Tennessee Titans",
-        "abr": "TEN",
+        "text": "Tennessee Titans",
+        "value": "TEN",
         "conf": "AFC",
         "div": "South"
     },
     {
         "city": "Washington",
-        "name": "Washington Redskins",
-        "abr": "WAS",
+        "text": "Washington Redskins",
+        "value": "WAS",
         "conf": "NFC",
         "div": "East"
     }

@@ -25,7 +25,6 @@ export default {
 		// Add API key to args
 		args = {
 			...args,
-			api_key: API_KEY,
 		};
 
 		if (method === "POST" || method === "PUT") {
