@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { Form, Dropdown } from "semantic-ui-react";
+import { Form, Dropdown, Button, Grid } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import { retrieveTeam } from "actions/teams.js";
 import  nflTeamsList  from "json/dropdown.json";
@@ -11,7 +11,7 @@ class Teams extends Component {
 		super(props);
 		this.state = {
 			team1: null,
-			team2: null,
+			// team2: null,
 		};
 	}
 
@@ -29,23 +29,32 @@ class Teams extends Component {
 	render() {
 		const options = nflTeamsList;
 		return (
-			<div className= "team-one-submit">
+			<Grid>
+			<div className= "team-submit-form">
 				<Form onSubmit={this._handleSubmit}>
+					{/* <Grid.Column width={12}> */}
 					<Form.Group>
 					<Form.Select
+						floating
+						width ={6}
 						onChange = {this._handleChange}
 						placeholder=" Select Your Team"
 						name="team1"
-						fluid search selection options={ options }/>
+						openOnFocus fluid search selection options={ options }/>
 					</Form.Group>
-					<Form.Group>
+				{/* </Grid.Column> */}
+				{/* <Grid.Column width={12}> */}
+					{/* <Form.Group>
 					<Form.Select
+						floating
+						width ={6}
 						onChange = {this._handleChange}
 						placeholder=" Select Your Team"
 						name="team2"
-						fluid search selection options={ options }
+						openOnFocus fluid search selection options={ options }
 					/>
-				</Form.Group>
+				</Form.Group> */}
+			{/* </Grid.Column> */}
 
 					{/* <select onChange={this._handleChange} name="team1"
 						{nflTeamsList.map((teams) => {
@@ -66,11 +75,13 @@ class Teams extends Component {
 					})}
 				</select>
 			</Form.Field> */}
+
 					<div className="submit-button">
-						<button type="submit">Submit</button>
+						<Button fluid type="submit">Submit</Button>
 					</div>
 				</Form>
 			</div>
+		</Grid>
 		);
 	}
 }

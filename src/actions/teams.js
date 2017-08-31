@@ -1,29 +1,29 @@
-import TEAMS from "json/nfl.json";
+// import TEAMS from "json/nfl.json";
+import NFLArrestAPI from "util/api";
 
 
 export function retrieveTeam(name) {
-	return (dispatch) => {
-		const teams = TEAMS;
-		const submittedteam1 = teams.find((team) => team.abr === name.team1);
-		const submittedteam2 = teams.find((team) => team.abr === name.team2);
-		console.log(teams);
-		console.log("retrieveTeam(name) action/function", submittedteam1);
-		console.log("retrieveTeam(name) action/function", submittedteam2);
-		dispatch({
-			type: "TEAM_LOAD_START",
+		return (dispatch) => {
+		dispatch({ type: "TEAM_LOAD_START" });
+
+		NFLArrestAPI.get("/team/topCrimes/",{
+			args: {
+				name: name.team1,
+			},
+		}).then((res) => {
+			console.log("retrieveTeam(name) action/function res: ", res);
+			if (res) {
+				return dispatch({
+					type: "TEAM_LOAD_SUCCESS",
+					team1: res,
+				});
+			}
+			else {
+				dispatch({
+					type: "TEAM_LOAD_FAILURE",
+					error: "Unable to get your team",
+				});
+			}
 		});
-		if (submittedteam1 && submittedteam2) {
-			return dispatch({
-				type: "TEAM_LOAD_SUCCESS",
-				submittedteam1,
-				submittedteam2,
-			});
-		}
-		else {
-			dispatch({
-				type: "TEAM_LOAD_FAILURE",
-				error: "Unable to get your team",
-			});
-		}
 	};
 }
