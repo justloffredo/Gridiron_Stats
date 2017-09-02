@@ -5,7 +5,6 @@ import NFLArrestAPI from "util/api";
 export function retrieveTeams(name, error) {
 	return (dispatch) => {
 		dispatch({ type: "TEAMS_LOAD_START" });
-		console.log(name.team1Title);
 		const reqTeam1 = NFLArrestAPI.get("/team/topCrimes/" + name.team1).then((res) => {
 			if (res) {
 				return res;
@@ -22,9 +21,10 @@ export function retrieveTeams(name, error) {
 				throw error;
 			}
 		});
-		Promise.all([reqTeam1, reqTeam2]).then((res => {
+		Promise.all([reqTeam1, reqTeam2]).then(res => {
 			if (res) {
 				const [team1Res, team2Res] = res;
+				console.log(team2Res);
 				dispatch({
 					type: "TEAMS_LOAD_SUCCESS",
 					team1: team1Res,
@@ -44,6 +44,6 @@ export function retrieveTeams(name, error) {
 					error:"Please Refresh. Something has gone terribly wrong",
 				});
 			})
-		);
+		;
 	};
 }

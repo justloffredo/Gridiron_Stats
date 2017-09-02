@@ -4,9 +4,9 @@ import { Form, Dropdown, Button, Grid } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import { retrieveTeams } from "actions/teams.js";
 import  nflTeamsList  from "json/dropdown.json";
-import "./Teams.scss";
+import "./searchTeams.scss";
 
-class Teams extends Component {
+class searchTeams extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -42,7 +42,6 @@ class Teams extends Component {
 									onChange = {this._handleChange}
 									placeholder=" Select Your Team"
 									name="team1"
-									title="team1Title"
 									openOnFocus fluid search selection options={ options }/>
 							</Form.Group>
 							</Grid.Column> */}
@@ -54,7 +53,6 @@ class Teams extends Component {
 									onChange = {this._handleChange}
 									placeholder=" Select Your Team"
 									name="team2"
-									title="team2Title"
 									openOnFocus fluid search selection options={ options }
 								/>
 							</Form.Group>
@@ -78,4 +76,4 @@ function mapStateToProps(state, props) {
 	};
 }
 
-export default connect (mapStateToProps, { retrieveTeams })(Teams);
+export default connect (mapStateToProps, { retrieveTeams })(searchTeams);

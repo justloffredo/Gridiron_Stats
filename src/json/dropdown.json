@@ -175,9 +175,9 @@
         "div": "North"
     },
     {
-        "city": "San Diego",
-        "text": "San Diego Chargers",
-        "value": "SD",
+        "city": "Los Angeles",
+        "text": "Los Angeles Chargers",
+        "value": "LAC",
         "conf": "AFC",
         "div": "West"
     },
