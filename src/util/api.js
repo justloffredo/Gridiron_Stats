@@ -20,6 +20,18 @@ export default {
 			...options.headers || {},
 		};
 
+		if (method === "POST" || method === "PUT") {
+		// For POST and PUTs, send args as JSON body
+		body = JSON.stringify(args);
+		headers["Content-Type"] = "application/json";
+	}
+	else {
+		// For anything else, send args as query params
+		query = "?" + Object.keys(args).map((key) => {
+			return `${encodeURIComponent(key)}=${encodeURIComponent(args[key])}`;
+		}).join("&");
+	}
+
 		return fetch(this.BASE_PATH + path + query, {
 			method,
 			headers,

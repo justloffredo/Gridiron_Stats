@@ -1,5 +1,6 @@
 const INITIAL_STATE = {
-	team1: null,
+	activeteam1: {},
+	activeteam2:{},
 	submitTeamSuccess: false,
 	submitTeamFailure: false,
 	isLOADING: false,
@@ -12,7 +13,8 @@ function teamsReduced(state = INITIAL_STATE, action) {
 		return {
 			...state,
 			isLOADING: true,
-			team1: null,
+			activeteam1: null,
+			activeteam2: null,
 			submitTeamSuccess: false,
 			submitTeamFailure: false,
 			error: null,
@@ -22,7 +24,8 @@ function teamsReduced(state = INITIAL_STATE, action) {
 		return {
 			...state,
 			isLOADING: false,
-			team1: action.team,
+			activeteam1: action.team1,
+			activeteam2: action.team2,
 			submitTeamSuccess: true,
 			submitTeamFailure: false,
 			error: null,
@@ -32,7 +35,8 @@ function teamsReduced(state = INITIAL_STATE, action) {
 		return {
 			...state,
 			isLOADING: false,
-			activeTeam: null,
+			activeteam1: null,
+			activeteam2: null,
 			submitTeamSuccess: false,
 			submitTeamFailure: true,
 			error: action.error,
