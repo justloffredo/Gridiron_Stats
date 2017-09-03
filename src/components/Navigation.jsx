@@ -2,13 +2,14 @@ import "./Navigation.scss";
 import React, { Component } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { Menu } from "semantic-ui-react";
-// import { connect } from "react-redux";
+import { connect } from "react-redux";
 
 
 
 
 class Navigation extends Component {
 	render() {
+
 		const links = [{
 			to: "/",
 			text: "GRIDIRON STATS",
@@ -21,7 +22,7 @@ class Navigation extends Component {
 		}];
 
 		return (
-			< Menu className="Nav">
+			< Menu >
 				< Menu.Menu>
 					<Menu.Item position="left">
 						<Link to="/" className="Nav-Link-Home">
@@ -37,15 +38,14 @@ class Navigation extends Component {
 									key= {link.to}
 									to= {link.to}
 									className= "Nav-link"
-									activeClassName= "is-active"
-								>
+									activeClassName= "is-active">
 									{link.text}
 								</NavLink>
 							</Menu.Item>
 						);
 					})}
-				</Menu.Menu>
-			</Menu>
+					</Menu.Menu>
+				</Menu>
 		);
 	}
 }

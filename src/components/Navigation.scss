@@ -7,12 +7,12 @@
 	background: rgb(232,239,213);
 	border-bottom: 1px solid #000;
 	z-index: 4;
-	position: absolute;
+	// position: absolute;
 	width: 100%;
 
 	&-link {
 		padding: 0 4px;
-		color: rgb(222, 214, 156);
+
 		text-decoration: none;
 
 		&.is-active,
@@ -34,7 +34,7 @@ text-decoration: none;
 
 	&.is-active,
 	&:hover {
-		color: rgb(20,41,83);
+		color: #0000ee;
 		;
 	}
 

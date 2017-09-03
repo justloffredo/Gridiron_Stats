@@ -1,26 +1,49 @@
-import TEAMS from "json/nfl.json";
+// import TEAMS from "json/nfl.json";
+import NFLArrestAPI from "util/api";
 
 
-export function retrieveTeam(name) {
+export function retrieveTeams(name, error) {
 	return (dispatch) => {
-		const teams   = TEAMS;
-		const team = teams.find((team) => team.name === name);
-		console.log(teams);
-		console.log("retrieveTeam(name) action/function", team);
-		dispatch({
-			type: "TEAM_LOAD_START",
+		dispatch({ type: "TEAMS_LOAD_START" });
+		const reqTeam1 = NFLArrestAPI.get("/team/topCrimes/" + name.team1).then((res) => {
+			if (res) {
+				return res;
+			}
+			else {
+				throw error;
+			}
 		});
-		if (team) {
-			return dispatch({
-				type: "TEAM_LOAD_SUCCESS",
-				team,
-			});
-		}
-		else {
-			dispatch({
-				type: "TEAM_LOAD_FAILURE",
-				error: "Unable to get your team",
-			});
-		}
+		const reqTeam2 = NFLArrestAPI.get("/team/topCrimes/" + name.team2).then((res) => {
+			if (res) {
+				return res;
+			}
+			else {
+				throw error;
+			}
+		});
+		Promise.all([reqTeam1, reqTeam2]).then((res) => {
+			if (res) {
+				const [team1Res, team2Res] = res;
+				console.log(team2Res);
+				dispatch({
+					type: "TEAMS_LOAD_SUCCESS",
+					team1: team1Res,
+					team2: team2Res,
+				});
+			}
+			else {
+				dispatch({
+					type: "TEAMS_LOAD_FAILURE",
+					error: "We can not load those teams",
+				});
+			}
+		})
+			.catch((err) => {
+				dispatch({
+					type:"TEAM_LOAD_FAILURE",
+					error:"Please Refresh. Something has gone terribly wrong",
+				});
+			})
+		;
 	};
 }

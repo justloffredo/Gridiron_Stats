@@ -1,6 +1,7 @@
 [
   {
   "name": "Chicago Bears",
+  "abr": "CHI",
   "Crime": [
       {
         "Category": "DUI",
@@ -65,6 +66,7 @@
 
   {
     "name": "Dallas Cowboys",
+    "abr": "DAL",
     "Crime": [
     {
       "Category": "DUI",
@@ -132,6 +134,7 @@
 
   {
     "name": "Miami Dolphins",
+    "abr": "MIA",
 
     "Crime":[
       {
@@ -192,6 +195,7 @@
   {
 
     "name": "Seattle Seahawks",
+    "abr": "SEA",
     "Crime": [
       {
       "Category": "DUI",
@@ -235,6 +239,7 @@
   {
 
     "name": "Philadelphia Eagles",
+    "abr": "PHI",
     "Crime": [
       {
       "Category": "Animal abuse",
