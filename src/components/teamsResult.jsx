@@ -1,29 +1,57 @@
-// import React, { Component } from "react";
-// import { connect } from "react-redux";
-// import { Link } from "react-router-dom";
-// import "./teamsResult.scss";
-//
-//
-//
-// class TeamsResult extends Component {
-// 	render() {
-// 		const { activeteam1, activeteam2 } = this.props;
-// 		return (
-// 			<div className="Team-Results">
-// 				Placeholder
-// 				<p> { activeteam1 } </p>
-// 				<p> { activeteam2 } </p>
-// 			</div>
-//
-// 		);
-// 	}
-// }
-//
-// function mapStateToProps(state, props) {
-// 	return {
-// 		activeteam1: state.teams.activeteam1,
-// 		activeteam2: state.teams.activeteam2,
-// 	};
-// }
-//
-// export default connect(mapStateToProps) (TeamsResult);
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { Link } from "react-router-dom";
+import { Grid } from "semantic-ui-react";
+import { Doughnut } from "react-chartjs-2";
+import "./teamsResult.scss";
+
+
+
+	class TeamsResult extends Component {
+		render() {
+			const { activeTeam1, activeTeam2 } = this.props;
+			const teamData1 = activeTeam1.map((team) => {
+				return team.arrest_count.toString();
+			});
+
+			const teamLabel1 = activeTeam1.map((team) => {
+				return team.Category.toString();
+			});
+
+			const data = {
+				labels: [{ teamLabel1 }],
+					datasets: {
+						data: [{ teamData1 }],
+
+			}
+		};
+			return (
+				<div className="Search-Results">
+					<Grid columns = {2} padded>
+						<Grid.Column>
+							<Doughnut
+								data = { data }
+								width={100}
+								height={50}
+								options={{
+			 					maintainAspectRatio: false
+							}}
+	 						/>
+						</Grid.Column>
+						<Grid.Column>
+							<p>Hello</p>
+						</Grid.Column>
+					</Grid>
+				</div>
+			);
+		}
+	}
+
+	function mapStateToProps(state, props) {
+		return {
+			activeTeam1: state.teams.activeteam1,
+			activeTeam2: state.teams.activeteam2,
+		};
+	}
+
+	export default connect(mapStateToProps) (TeamsResult);

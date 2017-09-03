@@ -15,6 +15,7 @@ function teamsReduced(state = INITIAL_STATE, action) {
 			isLOADING: true,
 			activeteam1: null,
 			activeteam2: null,
+			submitTeamSuccess: false,
 			error: null,
 		};
 
@@ -24,6 +25,7 @@ function teamsReduced(state = INITIAL_STATE, action) {
 			isLOADING: false,
 			activeteam1: action.team1,
 			activeteam2: action.team2,
+			submitTeamSuccess: true,
 			error: null,
 		};
 
@@ -33,6 +35,7 @@ function teamsReduced(state = INITIAL_STATE, action) {
 			isLOADING: false,
 			activeteam1: null,
 			activeteam2: null,
+			submitTeamSuccess: false,
 			error: action.error,
 		};
 	default:
