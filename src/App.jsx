@@ -5,7 +5,7 @@ import { createStore, applyMiddleware } from "redux";
 import { Provider } from "react-redux";
 import reduxThunk from "redux-thunk";
 import  Home  from "pages/Home";
-import  searchTeams  from "pages/searchTeams";
+import  Teams  from "pages/Teams";
 import  Navigation  from "components/Navigation";
 import  FourOhFour  from "pages/404";
 import reducers from "reducers";
@@ -20,7 +20,7 @@ class App extends React.Component {
 						<Navigation/>
 						<Switch>
 							<Route exact path ="/" component = {Home}/>
-							<Route exact path ="/searchteams" component = {searchTeams}/>
+							<Route exact path ="/teams" component = {Teams}/>
 							<Route exact path= "*" component={FourOhFour} />
 						</Switch>
 					</div>

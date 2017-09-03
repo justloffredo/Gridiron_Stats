@@ -21,7 +21,7 @@ export function retrieveTeams(name, error) {
 				throw error;
 			}
 		});
-		Promise.all([reqTeam1, reqTeam2]).then(res => {
+		Promise.all([reqTeam1, reqTeam2]).then((res) => {
 			if (res) {
 				const [team1Res, team2Res] = res;
 				console.log(team2Res);

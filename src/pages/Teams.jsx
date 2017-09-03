@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./Teams.scss";
 import { connect } from "react-redux";
 import { Form, Dropdown, Button, Grid } from "semantic-ui-react";
 import { Link } from "react-router-dom";
@@ -6,9 +7,9 @@ import { retrieveTeams } from "actions/teams.js";
 import Loader from "components/Loader";
 import TeamsResult from "components/teamsResult";
 import  nflTeamsList  from "json/dropdown.json";
-import "./searchTeams.scss";
 
-class searchTeams extends Component {
+
+class Teams extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -31,17 +32,21 @@ class searchTeams extends Component {
 	}
 
 	render() {
+		const { activeTeam1, activeTeam2, isLOADING, error } = this.props;
 		const options = nflTeamsList;
+
 		let content;
 
-		if (this.props.isLOADING) {
+		if (isLOADING) {
+			console.log("loader");
 			content = <Loader/>;
 		}
 		else {
-			content = <teamResult/>;
+			console.log(activeTeam2);
+			content = <div className="Search-Results"><p> {activeTeam2[0].Category} </p></div>;
 		}
 		return (
-			<div className="Search-Teams">
+			<div className="Teams-Search">
 				<Grid>
 					<div className= "team-submit-form">
 						<Form onSubmit={this._handleSubmit}>
@@ -55,8 +60,8 @@ class searchTeams extends Component {
 										name="team1"
 										openOnFocus fluid search selection options={ options }/>
 								</Form.Group>
-							</Grid.Column> */}
-							<Grid.Column width={12}> */}
+							</Grid.Column>
+							<Grid.Column width={12}>
 								<Form.Group>
 									<Form.Select
 										floating
@@ -69,14 +74,14 @@ class searchTeams extends Component {
 								</Form.Group>
 							</Grid.Column>
 							<div className="submit-button">
-									<Button fluid type="submit">Submit</Button>
+								<Button fluid type="submit">Submit</Button>
 							</div>
 						</Form>
 					</div>
 				</Grid>
-			</div> >
-		<div className= "Search-Results">
-			{ content }
+			<div className= "Search-Results">
+			  {content}
+			</div>
 		</div>
 		);
 	}
@@ -84,8 +89,10 @@ class searchTeams extends Component {
 function mapStateToProps(state, props) {
 	return {
 		isLOADING: state.teams.isLOADING,
+		activeTeam1: state.teams.activeteam1,
+		activeTeam2: state.teams.activeteam2,
 		error: state.teams.error,
 	};
 }
 
-export default connect (mapStateToProps, { retrieveTeams })(searchTeams);
+export default connect (mapStateToProps, { retrieveTeams }) (Teams);

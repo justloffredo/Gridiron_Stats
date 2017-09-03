@@ -1,22 +1,12 @@
-import react, { Component } from "react";
-import { Link } from "react-router-dom";
-import "./Loader.scss";
+import React from "react";
 
 
 
-class Loader extends Component {
+class Loader extends React.Component {
 	render() {
-		return(
-			<div className="container">
-				<div className="dot"></div>
-				<div className="dot"></div>
-				<div className="dot"></div>
-			</div>
-
-		);
+		return <div className = "Loader"/>;
 	}
 }
-
 
 
 export default Loader;
