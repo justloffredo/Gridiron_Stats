@@ -11,12 +11,12 @@ class TeamsResult extends Component {
 	render() {
 		const { activeTeam1, activeTeam2, activeTeam1Name, activeTeam2Name, activeTeam1Image, activeTeam2Image } = this.props;
 
-		//Map over data to return an array of numbers as strings
+		// Map over data to return an array of numbers as strings
 		const teamData1String = activeTeam1.map((team) => {
 			return (team.arrest_count);
 		});
 
-		//Map over previous array created and return a new array as numbers
+		// Map over previous array created and return a new array as numbers
 		const teamData1 = teamData1String.map(Number);
 
 		const teamLabel1 = activeTeam1.map((team) => {
@@ -34,21 +34,21 @@ class TeamsResult extends Component {
 		});
 
 		const data1 = {
-			  datasets: [{
+			datasets: [{
         data: teamData1,
 				backgroundColor: ["#090300", "#3a3432","##4a4543","##5c5855","##807d7c","#a5a2a2","#d6d5d4","#f7f7f7","#db2d20","#e8bbd0","#fded02","#01a252","#b5e4f4","#01a0e4","#a16a94","#cdab53"],
-				}],
-				labels: teamLabel1,
+			}],
+			labels: teamLabel1,
 
-	};
+		};
 
-	const data2 = {
+		const data2 = {
 			datasets: [{
-			data: teamData2,
-			backgroundColor: ["#090300", "#3a3432","##4a4543","##5c5855","##807d7c","#a5a2a2","#d6d5d4","#f7f7f7","#db2d20","#e8bbd0","#fded02","#01a252","#b5e4f4","#01a0e4","#a16a94","#cdab53"],
-		}],
+				data: teamData2,
+				backgroundColor: ["#090300", "#3a3432","##4a4543","##5c5855","##807d7c","#a5a2a2","#d6d5d4","#f7f7f7","#db2d20","#e8bbd0","#fded02","#01a252","#b5e4f4","#01a0e4","#a16a94","#cdab53"],
+			}],
 			labels: teamLabel2,
-};
+		};
 		console.log(teamLabel1);
 		return (
 			<div className="Search-Results">
@@ -56,9 +56,11 @@ class TeamsResult extends Component {
 					<Grid.Row columns = {2} padded>
 						<Grid.Column>
 							<h1 className="ActiveTeam1Header">{activeTeam1Name}</h1>
+							<img src={activeTeam1Image}/>
 						</Grid.Column>
 						<Grid.Column>
 							<h1 className="ActiveTeam2Header">{activeTeam2Name}</h1>
+							<img src={activeTeam2Image}/>
 						</Grid.Column>
 					</Grid.Row>
 					<Grid.Row columns = {2} padded>
@@ -71,9 +73,9 @@ class TeamsResult extends Component {
 									legend: {
 										position: 'left',
 									},
-								responsive: true,
-		        		maintainAspectRatio: false
-							}}
+									responsive: true,
+		        		maintainAspectRatio: false,
+								}}
 	 						/>
 						</Grid.Column>
 						<Grid.Column>
@@ -86,8 +88,8 @@ class TeamsResult extends Component {
 										position: 'left',
 									},
 									responsive: true,
-				        	maintainAspectRatio: false
-							}}
+				        	maintainAspectRatio: false,
+								}}
 	 						/>
 						</Grid.Column>
 					</Grid.Row>
@@ -103,8 +105,8 @@ function mapStateToProps(state, props) {
 		activeTeam2: state.teams.activeteam2,
 		activeTeam1Name: state.teams.activeteam1Name,
 		activeTeam2Name: state.teams.activeteam2Name,
-		activeTeam1Image: state.teams.activeteam1Image,
-		activeTeam2Image: state.teams.activeteam2Image,
+		activeTeam1Image: state.teams.activeteam1ImageSource,
+		activeTeam2Image: state.teams.activeteam2ImageSource,
 	};
 }
 
