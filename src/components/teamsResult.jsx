@@ -7,51 +7,54 @@ import "./teamsResult.scss";
 
 
 
-	class TeamsResult extends Component {
-		render() {
-			const { activeTeam1, activeTeam2 } = this.props;
-			const teamData1 = activeTeam1.map((team) => {
-				return team.arrest_count.toString();
-			});
+class TeamsResult extends Component {
+	render() {
+		const { activeTeam1, activeTeam2 } = this.props;
 
-			const teamLabel1 = activeTeam1.map((team) => {
-				return team.Category.toString();
-			});
+		const teamData1String = activeTeam1.map((team) => {
+			return (team.arrest_count);
+		});
 
-			const data = {
-				labels: [{ teamLabel1 }],
-					datasets: {
-						data: [{ teamData1 }],
+		const teamData1 = teamData1String.map(Number);
 
-			}
+		const teamLabel1 = activeTeam1.map((team) => {
+			return team.Category.toString();
+		});
+
+		const data = {
+			labels: [ teamLabel1 ],
+    datasets: [{
+        data: teamData1
+    }],
 		};
-			return (
-				<div className="Search-Results">
-					<Grid columns = {2} padded>
-						<Grid.Column>
-							<Doughnut
-								data = { data }
-								width={100}
-								height={50}
-								options={{
-			 					maintainAspectRatio: false
-							}}
-	 						/>
-						</Grid.Column>
-						<Grid.Column>
-							<p>Hello</p>
-						</Grid.Column>
-					</Grid>
-				</div>
-			);
-		}
+		console.log(teamData1);
+		return (
+			<div className="Search-Results">
+				<Grid columns = {2} padded>
+					<Grid.Column>
+						<Doughnut
+							data = { data }
+							width={200}
+							height={100}
+							options={{
+		 					maintainAspectRatio: false
+						}}
+ 						/>
+					</Grid.Column>
+					<Grid.Column>
+						<p>Hello</p>
+					</Grid.Column>
+				</Grid>
+			</div>
+		);
 	}
+}
 
-	function mapStateToProps(state, props) {
-		return {
-			activeTeam1: state.teams.activeteam1,
-			activeTeam2: state.teams.activeteam2,
-		};
-	}
+function mapStateToProps(state, props) {
+	return {
+		activeTeam1: state.teams.activeteam1,
+		activeTeam2: state.teams.activeteam2,
+};
+}
 
-	export default connect(mapStateToProps) (TeamsResult);
+export default connect(mapStateToProps) (TeamsResult);
