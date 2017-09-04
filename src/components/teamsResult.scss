@@ -1,0 +1,18 @@
+// CSS Reset
+@import "~reset-css/reset.css";
+@import "~semantic-ui-css/semantic.css";
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+// Box sizing
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+body {
+	box-sizing: border-box;
+}
+
+// .team1Column {
+// 	background:
+// 	background-repeat: no-repeat;
+// 	background-size: cover;
+// }

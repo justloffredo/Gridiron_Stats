@@ -18,12 +18,14 @@ class Teams extends Component {
 			team2: null,
 			team1Title: null,
 			team2Title: null,
+			team1ImageSrc: null,
+			team2ImageSrc: null,
 		};
 	}
 
 	_handleChange = (ev, data) => {
 		console.log(data.value);
-		this.setState({ [data.name]: [data.value].toString() });
+		this.setState({ [data.name]: [data.value.abr].toString(), [data.title]: [data.value.text], [data.imageSource]: [data.value.img] });
 	}
 
 	_handleSubmit = (ev) => {
@@ -59,6 +61,8 @@ class Teams extends Component {
 										onChange = {this._handleChange}
 										placeholder=" Select Your Team"
 										name="team1"
+										title= "team1Title"
+										imageSource="team1ImageSrc"
 										openOnFocus fluid search selection options={ options }/>
 								</Form.Group>
 							</Grid.Column>
@@ -70,6 +74,8 @@ class Teams extends Component {
 										onChange = {this._handleChange}
 										placeholder=" Select Your Team"
 										name="team2"
+										title= "team2Title"
+										imageSource="team2ImageSrc"
 										openOnFocus fluid search selection options={ options }
 										/>
 								</Form.Group>

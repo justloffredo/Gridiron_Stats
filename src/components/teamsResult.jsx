@@ -53,7 +53,7 @@ class TeamsResult extends Component {
 		return (
 			<div className="Search-Results">
 				<Grid columns = {2} padded>
-					<Grid.Column>
+					<Grid.Column className="team1Column">
 						<Doughnut
 							data = { data1 }
 							width={700}
