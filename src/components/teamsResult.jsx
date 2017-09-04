@@ -56,9 +56,12 @@ class TeamsResult extends Component {
 					<Grid.Column>
 						<Doughnut
 							data = { data1 }
-							width={800}
-							height={400}
+							width={700}
+							height={350}
 							options={{
+								legend: {
+									position: 'left',
+								},
 							responsive: true,
 	        		maintainAspectRatio: false
 						}}
@@ -67,11 +70,14 @@ class TeamsResult extends Component {
 					<Grid.Column>
 						<Doughnut
 							data = { data2 }
-							width={800}
-							height={400}
+							width={700}
+							height={350}
 							options={{
-							responsive: true,
-		        	maintainAspectRatio: false
+								legend: {
+									position: 'left',
+								},
+								responsive: true,
+			        	maintainAspectRatio: false
 						}}
  						/>
 					</Grid.Column>
