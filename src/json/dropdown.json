@@ -4,8 +4,8 @@
         "text": "Arizona Cardinals",
         "value": {
           "abr":"ARI",
-          "text": "Arizona Cardinals",
-          "img":"https://www.seeklogo.net/wp-content/uploads/2014/12/Arizona-Cardinals-logo-vector.jpg",
+          "title": "The Arizona Cardinals",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2014/12/Arizona-Cardinals-logo-vector.jpg"
         },
         "conf": "NFC",
         "div": "West"
@@ -15,8 +15,8 @@
         "text": "Atlanta Falcons",
         "value": {
           "abr":"ATL",
-          "text": "Atlanta Falcons",
-          "img":"https://www.seeklogo.net/wp-content/uploads/2012/12/atlanta-falcons-logo-vector-400x400.png",
+          "title": "The Atlanta Falcons",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2012/12/atlanta-falcons-logo-vector-400x400.png"
         },
         "conf": "NFC",
         "div": "South"
@@ -26,8 +26,8 @@
         "text": "Baltimore Ravens",
         "value": {
           "abr":"BAL",
-          "text": "Baltimore Ravens",
-          "img":"https://www.seeklogo.net/wp-content/uploads/2012/05/baltimore-ravens-logo-vector-01.png",
+          "title": "The Baltimore Ravens",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2012/05/baltimore-ravens-logo-vector-01.png"
         },
         "conf": "AFC",
         "div": "North"
@@ -37,8 +37,8 @@
         "text": "Buffalo Bills",
         "value": {
           "abr":"BUF",
-          "text": "Buffalo Bills",
-          "img":"https://www.seeklogo.net/wp-content/uploads/2012/05/buffalo-bills-logo-vector-01.png",
+          "title": "The Buffalo Bills",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2012/05/buffalo-bills-logo-vector-01.png"
         },
         "conf": "AFC",
         "div": "EAST"
@@ -48,8 +48,8 @@
         "text": "Carolina Panthers",
         "value": {
           "abr":"CAR",
-          "text": "Carolina Panthers",
-          "img":"https://www.seeklogo.net/wp-content/uploads/2012/11/carolina-panthers-logo-vector-400x400.png",
+          "title": "The Carolina Panthers",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2012/11/carolina-panthers-logo-vector-400x400.png"
         },
         "conf": "NFC",
         "div": "South"
@@ -59,8 +59,8 @@
         "text": "Cincinnati Bengals",
         "value": {
           "abr":"CIN",
-          "text": "Cincinnati Bengals",
-          "img":"https://www.seeklogo.net/wp-content/uploads/2012/05/cincinnati-bengals-logo-vector-01.png",
+          "title": "The Cincinnati Bengals",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2012/05/cincinnati-bengals-logo-vector-01.png"
         },
         "conf": "AFC",
         "div": "North"
@@ -70,8 +70,8 @@
         "text": "Chicago Bears",
         "value": {
           "abr":"CHI",
-          "text": "Chicago Bears",
-          "img":"https://www.seeklogo.net/wp-content/uploads/2011/05/chicago-bears-logo-vector-400x400.png",
+          "title": "The Chicago Bears",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2011/05/chicago-bears-logo-vector-400x400.png"
         },
         "conf": "NFC",
         "div": "North"
@@ -81,8 +81,8 @@
         "text": "Cleveland Browns",
         "value": {
           "abr":"CLE",
-          "text": "Cleveland Browns",
-          "img":"https://www.seeklogo.net/wp-content/uploads/2015/08/cleveland-browns-logo-vector-download-400x400.jpg",
+          "title": "The Cleveland Browns",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2015/08/cleveland-browns-logo-vector-download-400x400.jpg"
         },
         "conf": "AFC",
         "div": "North"
@@ -92,8 +92,8 @@
         "text": "Dallas Cowboys",
         "value": {
           "abr":"DAL",
-          "text": "Dallas Cowboys",
-          "img":"https://www.seeklogo.net/wp-content/uploads/2011/05/dallas-cowboys-logo-vector-400x400.png",
+          "title": "The Dallas Cowboys",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2011/05/dallas-cowboys-logo-vector-400x400.png"
         },
         "conf": "NFC",
         "div": "East"
@@ -103,8 +103,8 @@
         "text": "Denver Broncos",
         "value": {
           "abr":"DEN",
-          "text": "Denver Broncos",
-          "img":"https://www.seeklogo.net/wp-content/uploads/2012/10/denver-broncos-logo-vector-400x400.png",
+          "title": "The Denver Broncos",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2012/10/denver-broncos-logo-vector-400x400.png"
         },
         "conf": "AFC",
         "div": "West"
@@ -114,8 +114,8 @@
         "text": "Detroit Lions",
         "value": {
           "abr":"DET",
-          "text": "Detroit Lions",
-          "img":"https://www.seeklogo.net/wp-content/uploads/2012/09/detroit-lions-logo-vector-01-400x400.png",
+          "title": "The Detroit Lions",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2012/09/detroit-lions-logo-vector-01-400x400.png"
         },
         "conf": "NFC",
         "div": "North"
@@ -125,8 +125,8 @@
         "text": "Green Bay Packers",
         "value": {
           "abr":"GB",
-          "text": "Green Bay Packers",
-          "img":"https://www.seeklogo.net/wp-content/uploads/2012/12/green-bay-packers-logo-vector-400x400.png",
+          "title": "The Green Bay Packers",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2012/12/green-bay-packers-logo-vector-400x400.png"
         },
         "conf": "NFC",
         "div": "North"
@@ -136,8 +136,8 @@
         "text": "Houstan Texans",
         "value": {
           "abr":"HOU",
-          "text": "Houstan Texans",
-          "img":"https://www.seeklogo.net/wp-content/uploads/2012/11/houston-texans-logo-vector-400x400.png",
+          "title": "The Houstan Texans",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2012/11/houston-texans-logo-vector-400x400.png"
         },
         "conf": "AFC",
         "div": "South"
@@ -147,8 +147,8 @@
         "text": "Indianapolis Colts",
         "value": {
           "abr":"IND",
-          "text": "Indianapolis Colts",
-          "img":"https://www.seeklogo.net/wp-content/uploads/2015/08/indianapolis-colts-logo-vector-download-400x400.jpg",
+          "title": "The Indianapolis Colts",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2015/08/indianapolis-colts-logo-vector-download-400x400.jpg"
         },
         "conf": "AFC",
         "div": "South"
@@ -158,8 +158,8 @@
         "text": "Jacksonville Jaquars",
         "value": {
           "abr":"JAX",
-          "text": "Jacksonville Jaguars",
-          "img":"https://www.seeklogo.net/wp-content/uploads/2015/08/jacksonville-jaguars-logo-vector-download-400x400.jpg",
+          "title": "The Jacksonville Jaguars",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2015/08/jacksonville-jaguars-logo-vector-download-400x400.jpg"
         },
         "conf": "AFC",
         "div": "South"
@@ -169,8 +169,8 @@
         "text": "Kansas City Chiefs",
         "value": {
           "abr":"KC",
-          "text": "Kansas City Chiefs",
-          "img":"https://www.seeklogo.net/wp-content/uploads/2015/08/kansas-city-chiefs-logo-vector-download-400x400.jpg",
+          "title": "The Kansas City Chiefs",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2015/08/kansas-city-chiefs-logo-vector-download-400x400.jpg"
         },
         "conf": "AFC",
         "div": "West"
@@ -180,8 +180,8 @@
         "text": "Miami Dolphins",
         "value": {
           "abr":"MIA",
-          "text": "Miami Dolphins",
-          "img":"https://www.seeklogo.net/wp-content/uploads/2015/08/miami-dolphins-vector-logo-400x400.png",
+          "title": "The Miami Dolphins",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2015/08/miami-dolphins-vector-logo-400x400.png"
         },
         "conf": "AFC",
         "div": "East"
@@ -191,8 +191,8 @@
         "text": "Minnesota Vikings",
         "value": {
           "abr":"MIN",
-          "text": "Minnesota Vikings",
-          "img":"https://www.seeklogo.net/wp-content/uploads/2012/10/minnesota-vikings-logo-vector-400x400.png",
+          "title": "The Minnesota Vikings",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2012/10/minnesota-vikings-logo-vector-400x400.png"
         },
         "conf": "AFC",
         "div": "North"
@@ -202,8 +202,8 @@
         "text": "New England Patriots",
         "value": {
           "abr":"NE",
-          "text": "New England Patriots",
-          "img":"https://www.seeklogo.net/wp-content/uploads/2014/10/new-england-patriots-logo-preview-400x400.png",
+          "title": "The New England Patriots",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2014/10/new-england-patriots-logo-preview-400x400.png"
         },
         "conf": "AFC",
         "div": "East"
@@ -213,8 +213,8 @@
         "text": "New Orleans Saints",
         "value": {
           "abr":"NO",
-          "text": "New Orleans Saints",
-          "img":"https://www.seeklogo.net/wp-content/uploads/2012/12/new-orleans-saints-logo-vector-400x400.png",
+          "title": "The New Orleans Saints",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2012/12/new-orleans-saints-logo-vector-400x400.png"
         },
         "conf": "NFC",
         "div": "South"
@@ -224,8 +224,8 @@
         "text": "New York Giants",
         "value": {
           "abr":"NYG",
-          "text": "New York Giants",
-          "img":"https://www.seeklogo.net/wp-content/uploads/2011/05/new-york-giants-logo-vector-400x400.png",
+          "title": "The New York Giants",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2011/05/new-york-giants-logo-vector-400x400.png"
         },
         "conf": "NFC",
         "div": "East"
@@ -235,8 +235,8 @@
         "text": "New York Jets",
         "value": {
           "abr":"NYJ",
-          "text": "New York Jets",
-          "img":"https://www.seeklogo.net/wp-content/uploads/2011/05/new-york-jets-logo-vector-01.png",
+          "title": "The New York Jets",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2011/05/new-york-jets-logo-vector-01.png"
         },
         "conf": "AFC",
         "div": "East"
@@ -246,8 +246,8 @@
         "text": "Oakland Raiders",
         "value": {
           "abr":"OAK",
-          "text": "Oakland Raiders",
-          "img":"https://www.seeklogo.net/wp-content/uploads/2012/10/oakland-raiders-logo-vector-400x400.png",
+          "title": "The Oakland Raiders",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2012/10/oakland-raiders-logo-vector-400x400.png"
         },
         "conf": "AFC",
         "div": "West"
@@ -257,8 +257,8 @@
         "text": "Philadelphia Eagles",
         "value": {
           "abr":"PHI",
-          "text": "Philadelphia Eagles",
-          "img":"https://www.seeklogo.net/wp-content/uploads/2014/10/philadelphia-eagles-logo-400x400.png",
+          "title": "The Philadelphia Eagles",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2014/10/philadelphia-eagles-logo-400x400.png"
         },
         "conf": "NFC",
         "div": "East"
@@ -268,8 +268,8 @@
         "text": "Pittsburgh Steelers",
         "value": {
           "abr":"PIT",
-          "text": "Pittsburgh Steelers",
-          "img":"https://www.seeklogo.net/wp-content/uploads/2011/05/pittsburgh-steelers-logo-vector-01.png",
+          "title": "The Pittsburgh Steelers",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2011/05/pittsburgh-steelers-logo-vector-01.png"
         },
         "conf": "AFC",
         "div": "North"
@@ -279,8 +279,8 @@
         "text": "Los Angeles Chargers",
         "value": {
           "abr":"LAC",
-          "text": "Los Angeles Chargers",
-          "img":"https://www.seeklogo.net/wp-content/uploads/2012/10/san-diego-chargers-logo-vector-400x400.png",
+          "title": "The Los Angeles Chargers",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2012/10/san-diego-chargers-logo-vector-400x400.png"
         },
         "conf": "AFC",
         "div": "West"
@@ -290,8 +290,8 @@
         "text": "Los Angeles Rams",
         "value": {
           "abr":"LA",
-          "text": "Los Angeles Rams",
-          "img":"https://www.seeklogo.net/wp-content/uploads/2015/08/st-louis-rams-vector-logo-400x400.png",
+          "title": "The Los Angeles Rams",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2015/08/st-louis-rams-vector-logo-400x400.png"
         },
         "conf": "NFC",
         "div": "West"
@@ -301,8 +301,8 @@
         "text": "San Francisco 49ers",
         "value": {
           "abr":"SF",
-          "text": "San Francisco 49ers",
-          "img":"https://www.seeklogo.net/wp-content/uploads/2011/06/san-francisco-49ers-logo-vector-400x400.png",
+          "title": "The San Francisco 49ers",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2011/06/san-francisco-49ers-logo-vector-400x400.png"
         },
         "conf": "NFC",
         "div": "West"
@@ -312,8 +312,8 @@
 				"text": "Seattle Seahawks",
 				"value": {
           "abr":"SEA",
-          "text": "Seattle Seahawks",
-          "img":"https://www.seeklogo.net/wp-content/uploads/2012/10/seattle-seahawks-logo-vector-400x400.png",
+          "title": "The Seattle Seahawks",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2012/10/seattle-seahawks-logo-vector-400x400.png"
         },
 				"conf": "NFC",
 				"div": "West"
@@ -323,8 +323,8 @@
         "text": "Tampa Bay Buccaneers",
         "value": {
           "abr":"TB",
-          "text": "Tampa Bay Buccaneers",
-          "img":"https://www.seeklogo.net/wp-content/uploads/2012/12/tampa-bay-buccaneers-logo-vector-400x400.png",
+          "title": "The Tampa Bay Buccaneers",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2012/12/tampa-bay-buccaneers-logo-vector-400x400.png"
         },
         "conf": "NFC",
         "div": "South"
@@ -334,8 +334,8 @@
         "text": "Tennessee Titans",
         "value": {
           "abr":"TEN",
-          "text": "Tennessee Titans",
-          "img":"https://www.seeklogo.net/wp-content/uploads/2015/08/tennessee-titans-logo-vector-download-400x400.jpg",
+          "title": "The Tennessee Titans",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2015/08/tennessee-titans-logo-vector-download-400x400.jpg"
         },
         "conf": "AFC",
         "div": "South"
@@ -345,8 +345,8 @@
         "text": "Washington Redskins",
         "value": {
           "abr":"WAS",
-          "text": "Washington Red Skins",
-          "img":"https://www.seeklogo.net/wp-content/uploads/2011/05/washington-redskins-logo-vector-400x400.png",
+          "title": "The Washington Red Skins",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2011/05/washington-redskins-logo-vector-400x400.png"
         },
         "conf": "NFC",
         "div": "East"

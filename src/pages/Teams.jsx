@@ -7,7 +7,6 @@ import { retrieveTeams } from "actions/teams.js";
 import Loader from "components/Loader";
 import TeamsResult from "components/teamsResult";
 import  nflTeamsList  from "json/dropdown.json";
-import { Doughnut } from "react-chartjs-2";
 
 
 class Teams extends Component {
@@ -25,7 +24,7 @@ class Teams extends Component {
 
 	_handleChange = (ev, data) => {
 		console.log(data.value);
-		this.setState({ [data.name]: [data.value.abr].toString(), [data.title]: [data.value.text], [data.imageSource]: [data.value.img] });
+		this.setState({ [data.name]: [data.value.abr].toString(), [data.title]: [data.value.title].toString(), [data.imageSource]: [data.value.img].toString() });
 	}
 
 	_handleSubmit = (ev) => {
@@ -53,31 +52,28 @@ class Teams extends Component {
 				<Grid>
 					<div className= "team-submit-form">
 						<Form onSubmit={this._handleSubmit}>
-							<Grid.Column width={12}>
+							<Grid.Column width={8}>
 								<Form.Group>
 									<Form.Select
-										floating
 										width ={6}
 										onChange = {this._handleChange}
 										placeholder=" Select Your Team"
 										name="team1"
 										title= "team1Title"
 										imageSource="team1ImageSrc"
-										openOnFocus fluid search selection options={ options }/>
+										fluid search selection options={ options }/>
 								</Form.Group>
 							</Grid.Column>
-							<Grid.Column width={12}>
+							<Grid.Column width={8}>
 								<Form.Group>
 									<Form.Select
-										floating
 										width ={6}
 										onChange = {this._handleChange}
 										placeholder=" Select Your Team"
 										name="team2"
 										title= "team2Title"
 										imageSource="team2ImageSrc"
-										openOnFocus fluid search selection options={ options }
-										/>
+										fluid search selection options={ options }/>
 								</Form.Group>
 							</Grid.Column>
 							<div className="submit-button">

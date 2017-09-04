@@ -9,7 +9,7 @@ import "./teamsResult.scss";
 
 class TeamsResult extends Component {
 	render() {
-		const { activeTeam1, activeTeam2 } = this.props;
+		const { activeTeam1, activeTeam2, activeTeam1Name, activeTeam2Name, activeTeam1Image, activeTeam2Image } = this.props;
 
 		//Map over data to return an array of numbers as strings
 		const teamData1String = activeTeam1.map((team) => {
@@ -52,35 +52,45 @@ class TeamsResult extends Component {
 		console.log(teamLabel1);
 		return (
 			<div className="Search-Results">
-				<Grid columns = {2} padded>
-					<Grid.Column className="team1Column">
-						<Doughnut
-							data = { data1 }
-							width={700}
-							height={350}
-							options={{
-								legend: {
-									position: 'left',
-								},
-							responsive: true,
-	        		maintainAspectRatio: false
-						}}
- 						/>
-					</Grid.Column>
-					<Grid.Column>
-						<Doughnut
-							data = { data2 }
-							width={700}
-							height={350}
-							options={{
-								legend: {
-									position: 'left',
-								},
+				<Grid divided= 'vertically'>
+					<Grid.Row columns = {2} padded>
+						<Grid.Column>
+							<h1 className="ActiveTeam1Header">{activeTeam1Name}</h1>
+						</Grid.Column>
+						<Grid.Column>
+							<h1 className="ActiveTeam2Header">{activeTeam2Name}</h1>
+						</Grid.Column>
+					</Grid.Row>
+					<Grid.Row columns = {2} padded>
+						<Grid.Column className="team1Column">
+							<Doughnut
+								data = { data1 }
+								width={700}
+								height={350}
+								options={{
+									legend: {
+										position: 'left',
+									},
 								responsive: true,
-			        	maintainAspectRatio: false
-						}}
- 						/>
-					</Grid.Column>
+		        		maintainAspectRatio: false
+							}}
+	 						/>
+						</Grid.Column>
+						<Grid.Column>
+							<Doughnut
+								data = { data2 }
+								width={700}
+								height={350}
+								options={{
+									legend: {
+										position: 'left',
+									},
+									responsive: true,
+				        	maintainAspectRatio: false
+							}}
+	 						/>
+						</Grid.Column>
+					</Grid.Row>
 				</Grid>
 			</div>
 		);
@@ -91,7 +101,11 @@ function mapStateToProps(state, props) {
 	return {
 		activeTeam1: state.teams.activeteam1,
 		activeTeam2: state.teams.activeteam2,
-};
+		activeTeam1Name: state.teams.activeteam1Name,
+		activeTeam2Name: state.teams.activeteam2Name,
+		activeTeam1Image: state.teams.activeteam1Image,
+		activeTeam2Image: state.teams.activeteam2Image,
+	};
 }
 
 export default connect(mapStateToProps) (TeamsResult);
