@@ -7,6 +7,7 @@ import { retrieveTeams } from "actions/teams.js";
 import Loader from "components/Loader";
 import TeamsResult from "components/teamsResult";
 import  nflTeamsList  from "json/dropdown.json";
+import { Doughnut } from "react-chartjs-2";
 
 
 class Teams extends Component {
@@ -32,7 +33,7 @@ class Teams extends Component {
 	}
 
 	render() {
-		const { activeTeam1, activeTeam2, isLOADING, error } = this.props;
+		const { activeTeam1, activeTeam2, isLOADING, error, submitTeamSuccess } = this.props;
 		const options = nflTeamsList;
 
 		let content;
@@ -41,9 +42,9 @@ class Teams extends Component {
 			console.log("loader");
 			content = <Loader/>;
 		}
-		else {
-			console.log(activeTeam2);
-			content = <div className="Search-Results"><p> {activeTeam2[0].Category} </p></div>;
+
+		if (submitTeamSuccess) {
+			content = <TeamsResult/>;
 		}
 		return (
 			<div className="Teams-Search">
@@ -91,6 +92,7 @@ function mapStateToProps(state, props) {
 		isLOADING: state.teams.isLOADING,
 		activeTeam1: state.teams.activeteam1,
 		activeTeam2: state.teams.activeteam2,
+		submitTeamSuccess: state.teams.submitTeamSuccess,
 		error: state.teams.error,
 	};
 }
