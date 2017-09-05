@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import { connect } from "redux-thunk";
 import "./Home.scss";
 import { Parallax } from "react-parallax";
 
@@ -8,7 +7,7 @@ class Home extends Component {
 		return (
 
 			<div className="App">
-				<header> NEED TO CHANGE </header>
+				{/* <header> NEED TO CHANGE </header> */}
 
 				<Parallax
 					strength={300}
