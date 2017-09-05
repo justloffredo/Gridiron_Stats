@@ -49,44 +49,35 @@ class Teams extends Component {
 		}
 		return (
 			<div className="Teams-Search">
-				<Grid>
-					<div className= "team-submit-form">
-						<Form onSubmit={this._handleSubmit}>
-							<Grid.Column width={8}>
-								<Form.Group>
-									<Form.Select
-										width ={6}
-										onChange = {this._handleChange}
-										placeholder=" Select Your Team"
-										name="team1"
-										title= "team1Title"
-										imageSource="team1ImageSrc"
-										fluid search selection options={ options }/>
-								</Form.Group>
-							</Grid.Column>
-							<Grid.Column width={8}>
-								<Form.Group>
-									<Form.Select
-										width ={6}
-										onChange = {this._handleChange}
-										placeholder=" Select Your Team"
-										name="team2"
-										title= "team2Title"
-										imageSource="team2ImageSrc"
-										fluid search selection options={ options }/>
-								</Form.Group>
-							</Grid.Column>
-							<div className="submit-button">
-								<Button fluid type="submit">Submit</Button>
-							</div>
-						</Form>
-					</div>
-				</Grid>
-			<div className= "Search-Results">
-			  {content}
+						<div className= "team-submit-form">
+							<Form onSubmit={this._handleSubmit}>
+									<Form.Group widths='equal'>
+										<Form.Select
+											onChange = {this._handleChange}
+											placeholder=" Select Your Team"
+											name="team1"
+											title= "team1Title"
+											imageSource="team1ImageSrc"
+											fluid search selection options={ options }/>
+										<Form.Select
+											onChange = {this._handleChange}
+											placeholder=" Select Your Team"
+											name="team2"
+											title= "team2Title"
+											imageSource="team2ImageSrc"
+											fluid search selection options={ options }/>
+									</Form.Group>
+								<div className="submit-button">
+									<Button fluid type="submit">Submit</Button>
+								</div>
+							</Form>
+						</div>
+
+				<div className= "Search-Results">
+				  {content}
+				</div>
 			</div>
-		</div>
-		);
+			);
 	}
 }
 function mapStateToProps(state, props) {

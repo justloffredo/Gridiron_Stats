@@ -55,12 +55,12 @@ class TeamsResult extends Component {
 				<Grid divided= 'vertically'>
 					<Grid.Row columns = {2} padded>
 						<Grid.Column>
-							<h1 className="ActiveTeam1Header">{activeTeam1Name}</h1>
 							<img src={activeTeam1Image}/>
+							<h1 className="ActiveTeam1Header">{activeTeam1Name}</h1>
 						</Grid.Column>
 						<Grid.Column>
-							<h1 className="ActiveTeam2Header">{activeTeam2Name}</h1>
 							<img src={activeTeam2Image}/>
+							<h1 className="ActiveTeam2Header">{activeTeam2Name}</h1>
 						</Grid.Column>
 					</Grid.Row>
 					<Grid.Row columns = {2} padded>
