@@ -2,224 +2,352 @@
     {
         "city": "Arizona",
         "text": "Arizona Cardinals",
-        "value": "ARI",
+        "value": {
+          "abr":"ARI",
+          "title": "The Arizona Cardinals",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2014/12/Arizona-Cardinals-logo-vector.jpg"
+        },
         "conf": "NFC",
         "div": "West"
     },
     {
         "city": "Atlanta",
         "text": "Atlanta Falcons",
-        "value": "ATL",
+        "value": {
+          "abr":"ATL",
+          "title": "The Atlanta Falcons",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2012/12/atlanta-falcons-logo-vector-400x400.png"
+        },
         "conf": "NFC",
         "div": "South"
     },
     {
         "city": "Baltimore",
         "text": "Baltimore Ravens",
-        "value": "BAL",
+        "value": {
+          "abr":"BAL",
+          "title": "The Baltimore Ravens",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2012/05/baltimore-ravens-logo-vector-01.png"
+        },
         "conf": "AFC",
         "div": "North"
     },
     {
         "city": "Buffalo",
         "text": "Buffalo Bills",
-        "value": "BUF",
+        "value": {
+          "abr":"BUF",
+          "title": "The Buffalo Bills",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2012/05/buffalo-bills-logo-vector-01.png"
+        },
         "conf": "AFC",
         "div": "EAST"
     },
     {
         "city": "Carolina",
         "text": "Carolina Panthers",
-        "value": "CAR",
+        "value": {
+          "abr":"CAR",
+          "title": "The Carolina Panthers",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2012/11/carolina-panthers-logo-vector-400x400.png"
+        },
         "conf": "NFC",
         "div": "South"
     },
     {
         "city": "Cincinnati",
         "text": "Cincinnati Bengals",
-        "value": "CIN",
+        "value": {
+          "abr":"CIN",
+          "title": "The Cincinnati Bengals",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2012/05/cincinnati-bengals-logo-vector-01.png"
+        },
         "conf": "AFC",
         "div": "North"
     },
     {
         "city": "Chicago",
         "text": "Chicago Bears",
-        "value": "CHI",
+        "value": {
+          "abr":"CHI",
+          "title": "The Chicago Bears",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2011/05/chicago-bears-logo-vector-400x400.png"
+        },
         "conf": "NFC",
         "div": "North"
     },
     {
         "city": "Cleveland",
         "text": "Cleveland Browns",
-        "value": "CLE",
+        "value": {
+          "abr":"CLE",
+          "title": "The Cleveland Browns",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2015/08/cleveland-browns-logo-vector-download-400x400.jpg"
+        },
         "conf": "AFC",
         "div": "North"
     },
     {
         "city": "Dallas",
         "text": "Dallas Cowboys",
-        "value": "DAL",
+        "value": {
+          "abr":"DAL",
+          "title": "The Dallas Cowboys",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2011/05/dallas-cowboys-logo-vector-400x400.png"
+        },
         "conf": "NFC",
         "div": "East"
     },
     {
         "city": "Denver",
         "text": "Denver Broncos",
-        "value": "DEN",
+        "value": {
+          "abr":"DEN",
+          "title": "The Denver Broncos",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2012/10/denver-broncos-logo-vector-400x400.png"
+        },
         "conf": "AFC",
         "div": "West"
     },
     {
         "city": "Detroit",
         "text": "Detroit Lions",
-        "value": "DET",
+        "value": {
+          "abr":"DET",
+          "title": "The Detroit Lions",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2012/09/detroit-lions-logo-vector-01-400x400.png"
+        },
         "conf": "NFC",
         "div": "North"
     },
     {
         "city": "Green Bay",
         "text": "Green Bay Packers",
-        "value": "GB",
+        "value": {
+          "abr":"GB",
+          "title": "The Green Bay Packers",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2012/12/green-bay-packers-logo-vector-400x400.png"
+        },
         "conf": "NFC",
         "div": "North"
     },
     {
         "city": "Houston",
         "text": "Houstan Texans",
-        "value": "HOU",
+        "value": {
+          "abr":"HOU",
+          "title": "The Houstan Texans",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2012/11/houston-texans-logo-vector-400x400.png"
+        },
         "conf": "AFC",
         "div": "South"
     },
     {
         "city": "Indianapolis",
         "text": "Indianapolis Colts",
-        "value": "IND",
+        "value": {
+          "abr":"IND",
+          "title": "The Indianapolis Colts",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2015/08/indianapolis-colts-logo-vector-download-400x400.jpg"
+        },
         "conf": "AFC",
         "div": "South"
     },
     {
         "city": "Jacksonville",
         "text": "Jacksonville Jaquars",
-        "value": "JAX",
+        "value": {
+          "abr":"JAX",
+          "title": "The Jacksonville Jaguars",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2015/08/jacksonville-jaguars-logo-vector-download-400x400.jpg"
+        },
         "conf": "AFC",
         "div": "South"
     },
     {
         "city": "Kansas City",
         "text": "Kansas City Chiefs",
-        "value": "KC",
+        "value": {
+          "abr":"KC",
+          "title": "The Kansas City Chiefs",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2015/08/kansas-city-chiefs-logo-vector-download-400x400.jpg"
+        },
         "conf": "AFC",
         "div": "West"
     },
     {
         "city": "Miami",
         "text": "Miami Dolphins",
-        "value": "MIA",
+        "value": {
+          "abr":"MIA",
+          "title": "The Miami Dolphins",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2015/08/miami-dolphins-vector-logo-400x400.png"
+        },
         "conf": "AFC",
         "div": "East"
     },
     {
         "city": "Minnesota",
         "text": "Minnesota Vikings",
-        "value": "MIN",
+        "value": {
+          "abr":"MIN",
+          "title": "The Minnesota Vikings",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2012/10/minnesota-vikings-logo-vector-400x400.png"
+        },
         "conf": "AFC",
         "div": "North"
     },
     {
         "city": "New England",
         "text": "New England Patriots",
-        "value": "NE",
+        "value": {
+          "abr":"NE",
+          "title": "The New England Patriots",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2014/10/new-england-patriots-logo-preview-400x400.png"
+        },
         "conf": "AFC",
         "div": "East"
     },
     {
         "city": "New Orleans",
         "text": "New Orleans Saints",
-        "value": "NO",
+        "value": {
+          "abr":"NO",
+          "title": "The New Orleans Saints",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2012/12/new-orleans-saints-logo-vector-400x400.png"
+        },
         "conf": "NFC",
         "div": "South"
     },
     {
         "city": "New York",
         "text": "New York Giants",
-        "value": "NYG",
+        "value": {
+          "abr":"NYG",
+          "title": "The New York Giants",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2011/05/new-york-giants-logo-vector-400x400.png"
+        },
         "conf": "NFC",
         "div": "East"
     },
     {
         "city": "New York",
         "text": "New York Jets",
-        "value": "NYJ",
+        "value": {
+          "abr":"NYJ",
+          "title": "The New York Jets",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2011/05/new-york-jets-logo-vector-01.png"
+        },
         "conf": "AFC",
         "div": "East"
     },
     {
         "city": "Oakland",
         "text": "Oakland Raiders",
-        "value": "OAK",
+        "value": {
+          "abr":"OAK",
+          "title": "The Oakland Raiders",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2012/10/oakland-raiders-logo-vector-400x400.png"
+        },
         "conf": "AFC",
         "div": "West"
     },
     {
-        "city": "Philidelphia",
+        "city": "Philadelphia",
         "text": "Philadelphia Eagles",
-        "value": "PHI",
+        "value": {
+          "abr":"PHI",
+          "title": "The Philadelphia Eagles",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2014/10/philadelphia-eagles-logo-400x400.png"
+        },
         "conf": "NFC",
         "div": "East"
     },
     {
         "city": "Pittsburgh",
         "text": "Pittsburgh Steelers",
-        "value": "PIT",
+        "value": {
+          "abr":"PIT",
+          "title": "The Pittsburgh Steelers",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2011/05/pittsburgh-steelers-logo-vector-01.png"
+        },
         "conf": "AFC",
         "div": "North"
     },
     {
         "city": "Los Angeles",
         "text": "Los Angeles Chargers",
-        "value": "LAC",
+        "value": {
+          "abr":"LAC",
+          "title": "The Los Angeles Chargers",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2012/10/san-diego-chargers-logo-vector-400x400.png"
+        },
         "conf": "AFC",
+        "div": "West"
+    },
+    {
+        "city": "Los Angeles",
+        "text": "Los Angeles Rams",
+        "value": {
+          "abr":"LA",
+          "title": "The Los Angeles Rams",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2015/08/st-louis-rams-vector-logo-400x400.png"
+        },
+        "conf": "NFC",
         "div": "West"
     },
 		{
         "city": "San Francisco",
         "text": "San Francisco 49ers",
-        "value": "SF",
+        "value": {
+          "abr":"SF",
+          "title": "The San Francisco 49ers",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2011/06/san-francisco-49ers-logo-vector-400x400.png"
+        },
         "conf": "NFC",
         "div": "West"
     },
 		{
 				"city": "Seattle",
 				"text": "Seattle Seahawks",
-				"value": "SEA",
+				"value": {
+          "abr":"SEA",
+          "title": "The Seattle Seahawks",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2012/10/seattle-seahawks-logo-vector-400x400.png"
+        },
 				"conf": "NFC",
 				"div": "West"
 		},
     {
-        "city": "Los Angeles",
-        "text": "Los Angeles Rams",
-        "value": "LA",
-        "conf": "NFC",
-        "div": "West"
-    },
-    {
         "city": "Tampa Bay",
         "text": "Tampa Bay Buccaneers",
-        "value": "TB",
+        "value": {
+          "abr":"TB",
+          "title": "The Tampa Bay Buccaneers",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2012/12/tampa-bay-buccaneers-logo-vector-400x400.png"
+        },
         "conf": "NFC",
         "div": "South"
     },
     {
         "city": "Tennessee",
         "text": "Tennessee Titans",
-        "value": "TEN",
+        "value": {
+          "abr":"TEN",
+          "title": "The Tennessee Titans",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2015/08/tennessee-titans-logo-vector-download-400x400.jpg"
+        },
         "conf": "AFC",
         "div": "South"
     },
     {
         "city": "Washington",
         "text": "Washington Redskins",
-        "value": "WAS",
+        "value": {
+          "abr":"WAS",
+          "title": "The Washington Red Skins",
+          "img":"https://www.seeklogo.net/wp-content/uploads/2011/05/washington-redskins-logo-vector-400x400.png"
+        },
         "conf": "NFC",
         "div": "East"
     }

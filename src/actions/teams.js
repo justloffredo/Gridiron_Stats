@@ -25,11 +25,17 @@ export function retrieveTeams(name, error) {
 			if (res) {
 				const [team1Res, team2Res] = res;
 				console.log(team2Res);
+				console.log(name.team1Title);
 				dispatch({
 					type: "TEAMS_LOAD_SUCCESS",
 					team1: team1Res,
 					team2: team2Res,
-				});
+					// elements sent up directly from Team.jsx state
+					team1Name: name.team1Title,
+					team2Name: name.team2Title,
+					team1Image: name.team1ImageSrc,
+					team2Image: name.team2ImageSrc,
+					});
 			}
 			else {
 				dispatch({
