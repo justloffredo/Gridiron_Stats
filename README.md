@@ -47,24 +47,29 @@ equipped with Webpack for builds. It provides the following features:
 ```
 
 ## Technology Used
+<img
+* [NFL Arrest API](http://www.nflarrest.com/) pulls provides a database of arrests for players from the National Football League starting from January 1, 2000.
+
 <img src="src/assets/images/node.png" align= "center" /> <br><br>  
 * [Node](https://nodejs.org/en/) is a multi-platform, open-source JavaScript run-time environment that executes code on the server-side.
 <br><br>
 
-<img src="src/assets/images/react.png" align= "center" /> <br><br>  
+<img src="src/assets/images/rsz_react.png" align= "center" /> <br><br>  
 * [React](https://facebook.github.io/react/) is a declarative, component based Javascript library built for creating user interfaces.
 
+<img src="src/assets/images/chart.svg" align="center" /> <br><br>
+* [Chart.js](http://www.chartjs.org/) is a responsive, open-source Javascript library that helps build visualization of data through numerous customizable chart types.
+
+<img src="src/assets/images/semantic.png" align= "center" /> <br><br>
 * [Semantic](http://www.semantic-ui.com) is a UI component framework based around useful principles from natural language.
-<br><br>
-
-
+<br>
 
 
 ## Contribute
 * Contributions are always welcome! Please read the [contribution guidelines](CONTRIBUTING.md) first.
 
 ## Attribute
-* The template that was used to spin up React that is equipped with Webpack can be found [here](https://github.com/wbobeirne/nycda-react-webpack-template).
+* The template that was used to spin up React that is equipped with Webpack can be found [here](https://github.com/wbobeirne/nycda-react-webpack-template). Thanks [Will O'Beirne](https://github.com/wbobeirne)!
 
 ## License
 * This frontend web application is available under the [MIT License](https://github.com/samirdhebar/Gridiron_Stats/blob/master/LICENSE.md).
