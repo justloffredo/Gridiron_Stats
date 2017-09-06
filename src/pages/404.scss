@@ -3,6 +3,36 @@
 @import "~semantic-ui-css/semantic.css";
 
 
-.errorGif {
-  background: #00ff00 url('https://media.giphy.com/media/omCaTzY5JT344/giphy.gif') center center no-repeat;
+// .errorgif {
+// 	bottom: 0;
+// 	object-fit: cover;
+// 	height: 100%;
+// 	width: 100%;
+// }
+//
+// .gifError {
+//   	bottom: 0;
+//
+//   	height: 100%;
+//   	width: 100%;
+//     background: no-repeat;
+//
+// }
+
+.fourOhFourh1 {
+  line-height: calc(100vh - 40px);
+  margin-top: 2px;
+  color: rgba (255,255,255);
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: 100;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  font-size: 15vmin;
+  opacity: .5;
+}
+
+.fourOhFourError {
+  background: url("https://i.imgur.com/BCNEKvL.gif");
+  background-size: cover;
+  height:100vh;
 }
