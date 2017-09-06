@@ -35,8 +35,8 @@ class TeamsResult extends Component {
 
 		const data1 = {
 			datasets: [{
-        data: teamData1,
-				backgroundColor: ["#090300", "#3a3432","##4a4543","##5c5855","##807d7c","#a5a2a2","#d6d5d4","#f7f7f7","#db2d20","#e8bbd0","#fded02","#01a252","#b5e4f4","#01a0e4","#a16a94","#cdab53"],
+				data: teamData1,
+				backgroundColor: ["#51574a", "#f19670","#a34974","#7c9fb0","#afc849","#c94a53","#f4ccdc","#297373","#e40066","#fe9000","#3960e0","#eac435","#e32f3b","#9163b6","#f4b243","#74c493", "#d6cbf4", "#4a5611"],
 			}],
 			labels: teamLabel1,
 
@@ -45,7 +45,7 @@ class TeamsResult extends Component {
 		const data2 = {
 			datasets: [{
 				data: teamData2,
-				backgroundColor: ["#090300", "#3a3432","##4a4543","##5c5855","##807d7c","#a5a2a2","#d6d5d4","#f7f7f7","#db2d20","#e8bbd0","#fded02","#01a252","#b5e4f4","#01a0e4","#a16a94","#cdab53"],
+				backgroundColor: ["#51574a", "#f19670","#a34974","#7c9fb0","#afc849","#c94a53","#f4ccdc","#297373","#e40066","#fe9000","#3960e0","#eac435","#e32f3b","#9163b6","#f4b243","#74c493", "#d6cbf4", "#4a5611"],
 			}],
 			labels: teamLabel2,
 		};
@@ -76,7 +76,7 @@ class TeamsResult extends Component {
 									responsive: true,
 		        		maintainAspectRatio: false,
 								}}
-	 						/>
+							/>
 						</Grid.Column>
 						<Grid.Column>
 							<Doughnut
@@ -90,7 +90,7 @@ class TeamsResult extends Component {
 									responsive: true,
 				        	maintainAspectRatio: false,
 								}}
-	 						/>
+							/>
 						</Grid.Column>
 					</Grid.Row>
 				</Grid>
