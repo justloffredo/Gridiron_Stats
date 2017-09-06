@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import { Grid } from "semantic-ui-react";
+import { Grid, Divider } from "semantic-ui-react";
 import { Doughnut } from "react-chartjs-2";
 import "./teamsResult.scss";
 
@@ -78,6 +78,7 @@ class TeamsResult extends Component {
 								}}
 							/>
 						</Grid.Column>
+						<Divider vertical>Or</Divider>
 						<Grid.Column>
 							<Doughnut
 								data = { data2 }

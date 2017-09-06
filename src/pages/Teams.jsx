@@ -35,7 +35,13 @@ class Teams extends Component {
 
 	render() {
 		const { activeTeam1, activeTeam2, isLOADING, error, submitTeamSuccess } = this.props;
-		const options = nflTeamsList;
+		const options = nflTeamsList.map((team) => {
+			return {
+				key: team.text,
+				text: team.text,
+				value: team.value,
+			};
+		});
 
 		let content;
 
@@ -49,35 +55,37 @@ class Teams extends Component {
 		}
 		return (
 			<div className="Teams-Search">
-						<div className= "team-submit-form">
-							<Form onSubmit={this._handleSubmit}>
-									<Form.Group widths='equal'>
-										<Form.Select
-											onChange = {this._handleChange}
-											placeholder=" Select Your Team"
-											name="team1"
-											title= "team1Title"
-											imageSource="team1ImageSrc"
-											fluid search selection options={ options }/>
-										<Form.Select
-											onChange = {this._handleChange}
-											placeholder=" Select Your Team"
-											name="team2"
-											title= "team2Title"
-											imageSource="team2ImageSrc"
-											fluid search selection options={ options }/>
-									</Form.Group>
-								<div className="submit-button">
-									<Button fluid type="submit">Submit</Button>
-								</div>
-							</Form>
+				<div className= "team-submit-form">
+					<Form onSubmit={this._handleSubmit}>
+						<Form.Group widths='equal'>
+							<Form.Select
+								width= {4}
+								onChange = {this._handleChange}
+								placeholder=" Select Your Team"
+								name="team1"
+								title= "team1Title"
+								imageSource="team1ImageSrc"
+								search selection options={ options }/>
+							<Form.Select
+								width= {4}
+								onChange = {this._handleChange}
+								placeholder=" Select Your Team"
+								name="team2"
+								title= "team2Title"
+								imageSource="team2ImageSrc"
+								search selection options={ options }/>
+						</Form.Group>
+						<div className="submit-button-div">
+							<Button size="massive" type="submit">Submit</Button>
 						</div>
+					</Form>
+				</div>
 
 				<div className= "Search-Results">
 				  {content}
 				</div>
 			</div>
-			);
+		);
 	}
 }
 function mapStateToProps(state, props) {
