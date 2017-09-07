@@ -54,13 +54,13 @@ equipped with Webpack for builds. It provides the following features:
 * [Node](https://nodejs.org/en/) is a multi-platform, open-source JavaScript run-time environment that executes code on the server-side.
 <br><br>
 
-<img src="src/assets/images/rsz_react.png" align= "center" /> <br><br>  
+<img src="src/assets/images/react1.png" align= "center" /> <br><br>  
 * [React](https://facebook.github.io/react/) is a declarative, component based Javascript library built for creating user interfaces.
 
-<img src="src/assets/images/chart.svg" align="center" /> <br><br>
+<img src="src/assets/images/rsz_chart.png" align="center" /> <br><br>
 * [Chart.js](http://www.chartjs.org/) is a responsive, open-source Javascript library that helps build visualization of data through numerous customizable chart types.
 
-<img src="src/assets/images/semantic.png" align= "center" /> <br><br>
+<img src="src/assets/images/rsz_semantic.png" align= "center" /> <br><br>
 * [Semantic](http://www.semantic-ui.com) is a UI component framework based around useful principles from natural language.
 <br>
 
