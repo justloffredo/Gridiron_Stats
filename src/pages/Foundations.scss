@@ -1,0 +1,35 @@
+@import "~reset-css/reset.css";
+@import "~semantic-ui-css/semantic.css";
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+// Box sizing
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+body {
+	box-sizing: border-box;
+}
+
+.Foundations-Div {
+	padding-top: 50px;
+	background-color: rgb(61, 65, 71);
+}
+
+.MADD-Image {
+	width: 600px;
+}
+
+.Foundation-Images {
+	background-color: #FFF;
+}
+
+.main-column {
+    box-shadow: 10px 10px 5px #888888;
+}
+
+.Brady-Bill-Image
+.Joyful-Image
+.Natural-High-Image {
+	padding-top: 10px;
+
+}
