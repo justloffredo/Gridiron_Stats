@@ -11,7 +11,7 @@ class Home extends Component {
 
 				<Parallax
 					strength={300}
-					bgImage="http://i.imgur.com/avGzEKP.jpg"
+					bgImage="src/assets/images/background1.jpeg"
 					bgWidth="100%"
 				>
 					<h2>Gridiron Stats</h2>
@@ -19,14 +19,14 @@ class Home extends Component {
 				</Parallax>
 				<Parallax
 					strength={300}
-					bgImage="http://i.imgur.com/wUPkxQI.jpg"
+					bgImage="src/assets/images/background2.jpg"
 					bgWidth="100%"
 				>
 					<h2>Compare the Teams</h2>
 				</Parallax>
 				<Parallax
 					strength={300}
-					bgImage="http://i.imgur.com/z0ZJhbN.jpg"
+					bgImage="src/assets/images/background3.jpg"
 					bgWidth="100%"
 				>
 					<h2>Donate</h2>
