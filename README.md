@@ -47,7 +47,7 @@ equipped with Webpack for builds. It provides the following features:
 ```
 
 ## Technology Used
-<img
+<img src="src/assets/images/rsz_1nflarrests.png" align="center" /> <br><br>
 * [NFL Arrest API](http://www.nflarrest.com/) pulls provides a database of arrests for players from the National Football League starting from January 1, 2000.
 
 <img src="src/assets/images/node.png" align= "center" /> <br><br>  
