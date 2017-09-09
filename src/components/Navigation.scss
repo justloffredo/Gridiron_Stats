@@ -11,8 +11,8 @@
 	width: 100%;
 
 	&-link {
-		padding: 0 4px;
-
+		padding: 0 40px;
+		padding-right: 20px;
 		text-decoration: none;
 
 		&.is-active,
@@ -22,7 +22,7 @@
 		}
 
 		&.is-active {
-			text-decoration: underline;
+			text-decoration: none;
 		}
 	}
 }

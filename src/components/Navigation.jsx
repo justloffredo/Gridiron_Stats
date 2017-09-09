@@ -6,10 +6,8 @@ import { connect } from "react-redux";
 
 
 
-
 class Navigation extends Component {
 	render() {
-
 		const links = [{
 			to: "/",
 			text: "GRIDIRON STATS",
@@ -18,8 +16,9 @@ class Navigation extends Component {
 			text: "Compare Teams",
 		}, {
 			to: "/foundations",
-			text: "Please Check Out These Foundations",
+			text: "Foundations",
 		}];
+
 
 		return (
 			< Menu >
@@ -38,14 +37,15 @@ class Navigation extends Component {
 									key= {link.to}
 									to= {link.to}
 									className= "Nav-link"
-									activeClassName= "is-active">
+									activeClassName= "is-active"
+								>
 									{link.text}
 								</NavLink>
 							</Menu.Item>
 						);
 					})}
-					</Menu.Menu>
-				</Menu>
+				</Menu.Menu>
+			</Menu>
 		);
 	}
 }
