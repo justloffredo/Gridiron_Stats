@@ -4,25 +4,30 @@ import { Link } from "react-router-dom";
 import { Grid, Divider, Image } from "semantic-ui-react";
 import "./Foundations.scss";
 
-const srcMADD = "https://www.madd.org/wp-content/uploads/2017/08/MADD_Retina_Logo.png";
+const srcMADD =
+"src/assets/images/madd.png";
+
 
 const srcNtlHgh =
-"https://naturalhigh.org/wp-content/themes/naturalhigh/images/logo.png";
+"src/assets/images/naturalHigh.png";
 
-const srcJoyfulHrt =
-"http://www.joyfulheartfoundation.org/sites/all/themes/JHF/images/logo_0_new.png";
+const srcASPCA =
+"src/assets/images/aspca.svg";
 
-const srcBradyBill =
-"https://s3.amazonaws.com/libapps/accounts/124093/images/brady.png";
-
-const srcFAR =
-"http://www.attcnetwork.org/images/rsalogo.gif";
-
-const srcRAINN =
-"https://www.rainn.org/sites/all/themes/rainn/logo.svg";
 
 const srcSafeHorizon =
-"https://www.safehorizon.org/wp-content/themes/safehorizon/img/SH_Logo_Purple_Nail.png";
+"src/assets/images/safeHorizon.png";
+
+const srcWings =
+"src/assets/images/wings.png";
+
+const srcRAINN =
+"src/assets/images/rainn.svg";
+
+
+const srcPrevent =
+"src/assets/images/prevent.png";
+
 
 
 class Foundations extends Component {
@@ -35,11 +40,12 @@ class Foundations extends Component {
 					<Grid.Row>
 						<Grid.Column>
 							<Image className= "MADD-Image" src= {srcMADD}
-							 	href="https://www.madd.org/donate-now/"
+								href="https://www.madd.org/donate-now/"
 								target="_blank"
 								centered spaced='right'
 								shape='rounded'
-								spaced />
+								spaced
+							/>
 							<Divider hidden />
 						</Grid.Column>
 						<Grid.Column>
@@ -50,33 +56,37 @@ class Foundations extends Component {
 								centered spaced='right'
 								shape='rounded'
 								size='medium'
-								spaced='bottom' />
+								spaced='bottom'
+							/>
 							<Divider hidden />
-							<Image className="Joyful-Image"
-								src= {srcJoyfulHrt}
-								href="https://secure.joyfulheartfoundation.org/page/contribute/give-joy?source=websiteheader-button"
+							<Image className="ASPCA-Image"
+								src= {srcASPCA}
+								href="https://secure.aspca.org/donate/donate-201709-t1-p1"
 								target="_blank"
 								centered spaced='bottom'
 								shape='rounded'
-								spaced />
+								spaced
+							/>
 							<Divider hidden />
-							<Image src= {srcSafeHorizon}
-								href="https://www.safehorizon.org/donate/"
+							<Image src= {srcPrevent}
+								href="http://preventchildabuse.org/donation/"
 								target="_blank"
-								size= 'medium'
+								size= 'massive'
 								centered spaced='right'
 								shape='rounded'
-								spaced />
-								<Divider hidden />
+								spaced
+							/>
+							<Divider hidden />
 						</Grid.Column>
 						<Grid.Column>
-							<Image src= {srcFAR}
-								href="https://www.paypal.com/fundraiser/charity/35832"
+							<Image src= {srcWings}
+								href="https://www.coloradogives.org/index.php?section=organizations&action=newDonation&fwID=24298"
 								target="_blank"
-								size='massive'
+								size='large'
 								centered spaced='right'
 								shape='rounded'
-								spaced />
+								spaced
+							/>
 							 <Divider hidden />
 						</Grid.Column>
 					</Grid.Row>
@@ -89,25 +99,27 @@ class Foundations extends Component {
 								centered
 								spaced='right'
 								shape='rounded'
-								/>
+							/>
 							<Divider hidden />
 						</Grid.Column>
 						<Grid.Column>
-							<Image className="Brady-Bill-Image"
-								src= {srcBradyBill}
-								href="https://secure.everyaction.com/FixKmAdTbkyF5-sTXYCdpQ2"
+							<Image className="SafeHorizon-Image"
+								src= {srcSafeHorizon}
+								href="https://www.safehorizon.org/donate/"
 								target="_blank"
+								size="large"
 								centered
 								shape='rounded'
-								spaced='right'/>
-								<Divider hidden />
-					</Grid.Column>
-			</Grid.Row>
-			</Grid>
-		</div>
+								spaced='right'
+							/>
+							<Divider hidden />
+						</Grid.Column>
+					</Grid.Row>
+				</Grid>
+			</div>
 
 
-);
-}
+		);
+	}
 }
 export default Foundations;
