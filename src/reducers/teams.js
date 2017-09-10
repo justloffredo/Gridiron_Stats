@@ -5,6 +5,8 @@ const INITIAL_STATE = {
 	activeteam2Name: null,
 	activeteam1ImageSource: null,
 	activeteam2ImageSource: null,
+	activeteam1Timeline: null,
+	activeteam2Timeline: null,
 	submitTeamSuccess: false,
 	submitTeamFailure: false,
 	isLOADING: false,
@@ -23,6 +25,8 @@ function teamsReduced(state = INITIAL_STATE, action) {
 			activeteam2Name: null,
 			activeteam1ImageSource: null,
 			activeteam2ImageSource: null,
+			activeteam1Timeline: null,
+			activeteam2Timeline: null,
 			submitTeamSuccess: false,
 			error: null,
 		};
@@ -37,6 +41,8 @@ function teamsReduced(state = INITIAL_STATE, action) {
 			activeteam2Name: action.team2Name,
 			activeteam1ImageSource: action.team1Image,
 			activeteam2ImageSource: action.team2Image,
+			activeteam1Timeline: action.team1TimelineRes,
+			activeteam2Timeline: action.team2TimelineRes,
 			submitTeamSuccess: true,
 			error: null,
 		};
@@ -51,6 +57,8 @@ function teamsReduced(state = INITIAL_STATE, action) {
 			activeteam2Name: null,
 			activeteam1ImageSource: null,
 			activeteam2ImageSource: null,
+			activeteam1Timeline: null,
+			activeteam2Timeline: null,
 			submitTeamSuccess: false,
 			error: action.error,
 		};
