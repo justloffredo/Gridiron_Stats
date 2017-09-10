@@ -8,7 +8,7 @@ class Home extends Component {
 		return (
 
 			<div className="App">
-				<header> NEED TO CHANGE </header>
+				{/* <header> NEED TO CHANGE </header> */}
 
 				<Parallax
 					strength={300}
