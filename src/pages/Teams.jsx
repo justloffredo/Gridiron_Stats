@@ -67,6 +67,7 @@ class Teams extends Component {
 								imageSource="team1ImageSrc"
 								search selection options={ options }/>
 							<Form.Select
+								size= 'mini'
 								width= {4}
 								onChange = {this._handleChange}
 								placeholder=" Select Your Team"
