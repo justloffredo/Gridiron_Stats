@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { Grid, Divider } from "semantic-ui-react";
-import { Bar } from "react-chartjs-2";
+import { Bar, Radar, Pie, Polar } from "react-chartjs-2";
 import "./teamsResult.scss";
 
 
@@ -107,6 +107,12 @@ class TeamsResult extends Component {
 									 },
 									 responsive: true,
 		        			maintainAspectRatio: false,
+									deferred: {           // enabled by default
+									    xOffset: 150,     // defer until 150px of the canvas width are inside the viewport
+									    yOffset: '50%',   // defer until 50% of the canvas height are inside the viewport
+									    delay: 500        // delay of 500 ms after the canvas is considered inside the viewport
+									    }
+
 								}}
 							/>
 						</Grid.Column>
