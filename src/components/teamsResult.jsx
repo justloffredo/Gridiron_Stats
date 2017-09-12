@@ -55,10 +55,6 @@ class TeamsResult extends Component {
 		const teamData1 = teamData1String.map(Number);
 		const teamData2 = teamData2String.map(Number);
 
-		// const teamLabel2 = activeTeam2.map((team) => {
-		// 	return team.Category.toString();
-		// });
-
 		const data1 = {
 			labels: graphLabels,
 			datasets: [
@@ -66,27 +62,18 @@ class TeamsResult extends Component {
 					label: activeTeam1Name,
 					data: teamData1,
 					backgroundColor: "#f19670",
-
+					borderWidth: 5
 				},
 				{
 					label: activeTeam2Name,
 					data: teamData2,
-					backgroundColor: "#51574a"
-
+					backgroundColor: "#51574a",
+					borderWidth: 5
 				}
 
 ]};
 
 
-		// const data2 = {
-		// 	datasets: [{
-		// 		data: teamData2,
-		// 		backgroundColor: ["#51574a", "#f19670","#a34974","#7c9fb0","#afc849","#c94a53","#f4ccdc","#297373","#e40066","#fe9000","#3960e0","#eac435","#e32f3b","#9163b6","#f4b243","#74c493", "#d6cbf4", "#4a5611"],
-		// 	}],
-		// 	labels: teamLabel2,
-		// };
-		// console.log(activeTeam1Timeline);
-		// console.log(activeTeam2Timeline);
 		return (
 			<div className="Search-Results">
 				<Grid divided= 'vertically'>
@@ -110,8 +97,16 @@ class TeamsResult extends Component {
 									legend: {
 										position: 'top',
 									},
-									responsive: true,
-		        		maintainAspectRatio: false,
+									scales: {
+											 yAxes: [{
+													 ticks: {
+															 beginAtZero:true,
+															 fontSize: 20,
+													 }
+											 }]
+									 },
+									 responsive: true,
+		        			maintainAspectRatio: false,
 								}}
 							/>
 						</Grid.Column>
