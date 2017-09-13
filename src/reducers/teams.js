@@ -41,8 +41,8 @@ function teamsReduced(state = INITIAL_STATE, action) {
 			activeteam2Name: action.team2Name,
 			activeteam1ImageSource: action.team1Image,
 			activeteam2ImageSource: action.team2Image,
-			activeteam1Timeline: action.team1TimelineRes,
-			activeteam2Timeline: action.team2TimelineRes,
+			activeteam1Timeline: action.team1TimeLine,
+			activeteam2Timeline: action.team2TimeLine,
 			submitTeamSuccess: true,
 			error: null,
 		};

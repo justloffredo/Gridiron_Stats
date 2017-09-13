@@ -21,7 +21,7 @@ class Navigation extends Component {
 
 
 		return (
-			< Menu size='massive' className="Navigation" >
+			< Menu size='large' className="Navigation" >
 				< Menu.Menu>
 					<Menu.Item position="left">
 						<Link to="/" className="Nav-Link-Home">

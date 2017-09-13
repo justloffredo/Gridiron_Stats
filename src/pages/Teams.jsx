@@ -65,7 +65,8 @@ class Teams extends Component {
 								name="team1"
 								title= "team1Title"
 								imageSource="team1ImageSrc"
-								search selection options={ options }/>
+								search selection options={ options }
+							required/>
 							<Form.Select
 								size= 'mini'
 								width= {4}
@@ -74,7 +75,8 @@ class Teams extends Component {
 								name="team2"
 								title= "team2Title"
 								imageSource="team2ImageSrc"
-								search selection options={ options }/>
+								search selection options={ options }
+								required/>
 						</Form.Group>
 						<div className="submit-button-div">
 							<Button size="massive" type="submit">Submit</Button>
