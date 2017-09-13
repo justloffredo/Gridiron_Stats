@@ -41,14 +41,14 @@ export function retrieveTeams(name, error) {
 		Promise.all([reqTeam1, reqTeam2, reqTeam1Timeline, reqTeam2Timeline ]).then((res) => {
 			if (res) {
 				const [team1Res, team2Res, team1TimelineRes, team2TimelineRes] = res;
-				// console.log(team1TimelineRes);
-				// console.log(team2TimelineRes);
+				console.log(team1TimelineRes);
+				console.log(team2TimelineRes);
 				dispatch({
 					type: "TEAMS_LOAD_SUCCESS",
 					team1: team1Res,
 					team2: team2Res,
-					team1Timeline: team1TimelineRes,
-					team2Timeline: team2TimelineRes,
+					team1TimeLine: team1TimelineRes,
+					team2TimeLine: team2TimelineRes,
 					// elements sent up directly from Team.jsx state
 					team1Name: name.team1Title,
 					team2Name: name.team2Title,
